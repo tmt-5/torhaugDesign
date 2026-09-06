@@ -1,26 +1,102 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   Design tokens — measured from design/frontPage.png (exported at 2x).
+--------------------------------------------------------------------------- */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  --color-canvas: #f6f6f6;
+  --color-surface: #ffffff;
+  --color-ink: #111111;
+  --color-ink-muted: #555555;
+  --color-ink-subtle: #999999;
+  --color-line: #eeeeee;
+
+  /* Content column. Every row on the page aligns to this measure. */
+  --measure: 660px;
+  --gutter: 24px;
+
+  /* Row grid: date column | logo | text. 114 + 16 + 32 + 16 = 178px indent. */
+  --col-date: 114px;
+  --col-logo: 32px;
+  --col-gap: 16px;
+
+  /* Case-study label|content rows (no logo) — measured from trumfPage.png. */
+  --col-label: 130px;
+
+  /* Vertical rhythm. */
+  --space-section: 54px;
+  --space-row: 24px;
+  --space-page: 80px;
+
+  /* Motion — one curve, three durations, so every micro-interaction on the
+     page feels like it came from the same hand. */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 150ms;
+  --duration-base: 300ms;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --color-ink: var(--color-ink);
+  --color-ink-muted: var(--color-ink-muted);
+  --color-ink-subtle: var(--color-ink-subtle);
+  --color-line: var(--color-line);
+
+  --font-sans: var(--font-sans-stack);
+
+  --container-measure: var(--measure);
+  --spacing-gutter: var(--gutter);
+  --spacing-section: var(--space-section);
+  --spacing-row: var(--space-row);
+  --spacing-page: var(--space-page);
+
+  --ease-soft: var(--ease-soft);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ---------------------------------------------------------------------------
+   Base
+--------------------------------------------------------------------------- */
+
+* {
+  min-width: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans-stack);
+  font-size: 15px;
+  line-height: 27px;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
