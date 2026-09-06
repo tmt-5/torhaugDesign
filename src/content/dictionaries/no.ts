@@ -83,6 +83,7 @@ export const dictionary: Dictionary = {
         key: "asko",
         period: "2023 – 2026",
         logo: { src: "/logos/asko.png", alt: "ASKO Servering" },
+        color: "#870237",
         title: "ASKO Servering",
         body: "UX-lead på tvers av produktteam. Involvert i flere initiativer på tvers av ASKO og NorgesGruppen Data.",
         caseStudy: {
@@ -221,6 +222,7 @@ export const dictionary: Dictionary = {
         key: "trumf",
         period: "2022",
         logo: { src: "/logos/trumf.png", alt: "Trumf" },
+        color: "#0A0066",
         title: "Trumf",
         body: "Involvert i både implementeringen av mobilbetalingsløsningen Trumf Pay og innloggingstjenesten TrumfID.",
         caseStudy: {
@@ -372,6 +374,7 @@ export const dictionary: Dictionary = {
         key: "aera",
         period: "2023",
         logo: { src: "/logos/aera.png", alt: "Aera" },
+        color: "#5A1565",
         title: "Aera Betaling & Identifikasjon",
         body: "Spennende prosjekt som gikk ut på å realisere Aera sin visjon om å bli en ledende aktør innenfor checkout-løsninger på web.",
         caseStudy: {
@@ -485,6 +488,7 @@ export const dictionary: Dictionary = {
         key: "levena",
         period: "2024/25",
         logo: { src: "/logos/levena.png", alt: "Leve NÅ" },
+        color: "#D47A1A",
         title: "Nettkurs om barnepalliasjon for Leve NÅ (Frambu)",
         body: "Utformet nettkurs i samarbeid med Leve NÅ hvor formålet har vært å øke faglig kompetanse om barnepalliasjon for kommuner og private aktører i helsesektoren.",
         caseStudy: {

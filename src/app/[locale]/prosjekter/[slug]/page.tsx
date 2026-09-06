@@ -1,11 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { CaseStudyBlocks } from "@/components/case-study/CaseStudyBlocks";
-import { CaseStudyHero } from "@/components/case-study/CaseStudyHero";
-import { Reveal } from "@/components/motion/Reveal";
+import { ProjectHeader } from "@/components/case-study/ProjectHeader";
 import { Container } from "@/components/ui/Container";
 import { getDictionary } from "@/lib/dictionary";
 import { isLocale, locales } from "@/lib/i18n";
@@ -45,7 +42,9 @@ export async function generateMetadata({
   if (!project) return {};
 
   return {
-    title: project.caseStudy?.title ?? project.title,
+    title: {
+      absolute: `${dictionary.meta.title} · ${project.caseStudy?.title ?? project.title}`,
+    },
     description: project.caseStudy?.intro[0] ?? project.body,
     alternates: { canonical: canonicalFor(locale, `/prosjekter/${slug}`) },
   };
@@ -72,73 +71,23 @@ export default async function ProjectPage({
   return (
     <main className="py-page">
       <Container as="article">
-        <Reveal>
-          <Link
-            href={`/${locale}#${sectionId}`}
-            className="text-ink-muted hover:text-ink inline-flex items-center gap-1.5 transition-colors duration-(--duration-fast) ease-(--ease-soft)"
-          >
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              aria-hidden="true"
-            >
-              <path
-                d="M7.5 2.5L3 6L7.5 9.5"
-                stroke="currentColor"
-                strokeWidth="1.4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            {dictionary.projectPage.back}
-          </Link>
-        </Reveal>
+        <ProjectHeader
+          locale={locale}
+          backHref={`/${locale}#${sectionId}`}
+          backLabel={dictionary.projectPage.back}
+          languageLabel={dictionary.a11y.languageLabel}
+          period={project.period}
+          title={project.title}
+          logo={project.logo}
+          description={caseStudy ? caseStudy.intro : [project.body]}
+        />
 
         {caseStudy ? (
-          <>
-            <CaseStudyHero
-              title={caseStudy.title}
-              meta={caseStudy.meta}
-              intro={caseStudy.intro}
-            />
-
-            <CaseStudyBlocks blocks={caseStudy.blocks} />
-          </>
+          <CaseStudyBlocks blocks={caseStudy.blocks} />
         ) : (
-          <>
-            <Reveal delay={0.05} className="mt-10 flex items-start gap-3">
-              {project.logo ? (
-                <span className="relative block size-10 shrink-0 overflow-hidden rounded-[6px]">
-                  <Image
-                    src={project.logo.src}
-                    alt={project.logo.alt}
-                    width={40}
-                    height={40}
-                    className="size-10 object-contain"
-                  />
-                </span>
-              ) : null}
-
-              <div>
-                <p className="text-ink-muted">{project.period}</p>
-                <h1 className="text-ink text-[22px] leading-8 font-normal">
-                  {project.title}
-                </h1>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.1} className="mt-section">
-              <p className="text-ink-muted max-w-[565px] text-pretty">
-                {project.body}
-              </p>
-
-              <p className="border-line text-ink-subtle mt-8 border-t pt-8 text-pretty">
-                {dictionary.projectPage.comingSoon}
-              </p>
-            </Reveal>
-          </>
+          <p className="border-line text-ink-subtle mt-section border-t pt-8 text-pretty">
+            {dictionary.projectPage.comingSoon}
+          </p>
         )}
       </Container>
     </main>

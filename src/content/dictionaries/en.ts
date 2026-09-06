@@ -2,7 +2,7 @@ import type { Dictionary } from "@/content/dictionaries/types";
 
 export const dictionary: Dictionary = {
   meta: {
-    title: "Trym Torhaug — UX designer",
+    title: "Torhaug Design",
     description:
       "UX designer based in Oslo. Design lead at Telenor, previously Forte, the Norwegian Police IT unit and Headit. Experience, projects and contact details.",
     ogLocale: "en_GB",
@@ -83,6 +83,7 @@ export const dictionary: Dictionary = {
         key: "asko",
         period: "2023 – Now",
         logo: { src: "/logos/asko.png", alt: "ASKO Servering" },
+        color: "#870237",
         title: "ASKO Servering",
         body: "UX lead across product teams. Involved in several initiatives spanning ASKO and NorgesGruppen Data.",
         caseStudy: {
@@ -222,6 +223,7 @@ export const dictionary: Dictionary = {
         key: "trumf",
         period: "2022",
         logo: { src: "/logos/trumf.png", alt: "Trumf" },
+        color: "#0A0066",
         title: "Trumf",
         body: "Involved in both the implementation of the Trumf Pay mobile payment solution and the TrumfID sign-in service.",
         caseStudy: {
@@ -373,6 +375,7 @@ export const dictionary: Dictionary = {
         key: "aera",
         period: "2023",
         logo: { src: "/logos/aera.png", alt: "Aera" },
+        color: "#5A1565",
         title: "Aera Payment & Identification",
         body: "An exciting project set on realising Aera's vision of becoming a leading player in web checkout solutions.",
         caseStudy: {
@@ -486,6 +489,7 @@ export const dictionary: Dictionary = {
         key: "levena",
         period: "2024/25",
         logo: { src: "/logos/levena.png", alt: "Leve NÅ" },
+        color: "#D47A1A",
         title:
           "Online course on paediatric palliative care for Leve NÅ (Frambu)",
         body: "Designed an online course together with Leve NÅ, aimed at raising professional competence in paediatric palliative care for municipalities and private actors in the health sector.",

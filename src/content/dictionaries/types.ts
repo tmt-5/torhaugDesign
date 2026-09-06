@@ -60,6 +60,8 @@ export type Entry = {
   logo?: Logo;
   title: string;
   body: string;
+  /** Brand accent (hex, from the logo) — used for the hover tint on project rows. */
+  color?: string;
   /** Full case-study content for the project's own page — see CaseStudy. */
   caseStudy?: CaseStudy;
 };
