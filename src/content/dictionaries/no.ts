@@ -43,7 +43,7 @@ export const dictionary: Dictionary = {
         period: "2021 – 2022",
         logo: { src: "/logos/politiet.png", alt: "Politiet" },
         title: "Produktdesigner/UX i Politiets IT-enhet",
-        body: "Oslo, Norge · Designet komplekse sikkerhetskritiske systemer internt. Politiet lærte meg best praksis i autonome produktteam og hvordan å manøvrere seg det offentlige landskapet og internpolitikk.",
+        body: "Oslo, Norge · Designet komplekse sikkerhetskritiske systemer internt.",
       },
       {
         key: "headit",
@@ -617,7 +617,7 @@ export const dictionary: Dictionary = {
         key: "linkedin",
         label: "LinkedIn",
         value: "trymt",
-        href: "https://www.linkedin.com/in/trymt",
+        href: "https://www.linkedin.com/in/trym-torhaug",
         external: true,
       },
     ],

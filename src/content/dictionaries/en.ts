@@ -29,7 +29,7 @@ export const dictionary: Dictionary = {
         period: "2026 – Now",
         logo: { src: "/logos/telenor.png", alt: "Telenor" },
         title: "Design lead at Telenor",
-        body: "Fornebu, Norway · Working on the internal systems that let all of Norway take mobile and broadband services for granted. My most exciting chapter so far!",
+        body: "Fornebu, Norway · Working on the internal systems that let all of Norway take mobile and broadband services for granted.",
       },
       {
         key: "forte",
@@ -43,7 +43,7 @@ export const dictionary: Dictionary = {
         period: "2021 – 2022",
         logo: { src: "/logos/politiet.png", alt: "The Norwegian Police" },
         title: "Product designer/UX at the Norwegian Police IT unit",
-        body: "Oslo, Norway · Designed complex, security-critical systems in-house. The Police taught me best practice in autonomous product teams, and how to navigate the public sector and its internal politics.",
+        body: "Oslo, Norway · Designed complex, security-critical systems in-house.",
       },
       {
         key: "headit",
@@ -620,7 +620,7 @@ export const dictionary: Dictionary = {
         key: "linkedin",
         label: "LinkedIn",
         value: "trymt",
-        href: "https://www.linkedin.com/in/trymt",
+        href: "https://www.linkedin.com/in/trym-torhaug",
         external: true,
       },
     ],
