@@ -58,7 +58,7 @@ export function ProjectHeader({
         <LocaleSwitcher current={locale} label={languageLabel} />
       </Reveal>
 
-      <Reveal delay={0.05} className="mt-10 flex items-center gap-4">
+      <Reveal className="mt-10 flex items-center gap-4">
         {logo ? (
           <span className="border-line bg-surface relative flex size-16 shrink-0 items-center justify-center overflow-hidden rounded-xl border p-3">
             <Image
@@ -79,7 +79,7 @@ export function ProjectHeader({
         </div>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-6 max-w-[35.3125rem] space-y-5">
+      <Reveal className="mt-6 max-w-[35.3125rem] space-y-5">
         {description.map((paragraph) => (
           <p key={paragraph} className="text-ink-muted text-pretty">
             {paragraph}

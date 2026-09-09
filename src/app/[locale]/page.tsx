@@ -24,9 +24,6 @@ export default async function FrontPage({
   const dictionary = await getDictionary(locale);
   const { experience, education, projects, sideProjects, contact } = dictionary;
 
-  /** Rows share one reveal rhythm; the delay only staggers within a section. */
-  const stagger = (index: number) => index * 0.05;
-
   return (
     <>
       <a
@@ -41,32 +38,32 @@ export default async function FrontPage({
           <SiteHeader locale={locale} dictionary={dictionary} />
 
           <ResumeSection id={experience.id} label={experience.label}>
-            {experience.entries.map((entry, index) => (
-              <Reveal key={entry.key} delay={stagger(index)}>
+            {experience.entries.map((entry) => (
+              <Reveal key={entry.key}>
                 <EntryRow entry={entry} />
               </Reveal>
             ))}
           </ResumeSection>
 
           <ResumeSection id={education.id} label={education.label}>
-            {education.entries.map((entry, index) => (
-              <Reveal key={entry.key} delay={stagger(index)}>
+            {education.entries.map((entry) => (
+              <Reveal key={entry.key}>
                 <EducationRow entry={entry} />
               </Reveal>
             ))}
           </ResumeSection>
 
           <ResumeSection id={projects.id} label={projects.label}>
-            {projects.entries.map((entry, index) => (
-              <Reveal key={entry.key} delay={stagger(index)}>
+            {projects.entries.map((entry) => (
+              <Reveal key={entry.key}>
                 <EntryRow entry={entry} href={projectHref(locale, entry.key)} />
               </Reveal>
             ))}
           </ResumeSection>
 
           <ResumeSection id={sideProjects.id} label={sideProjects.label}>
-            {sideProjects.entries.map((entry, index) => (
-              <Reveal key={entry.key} delay={stagger(index)}>
+            {sideProjects.entries.map((entry) => (
+              <Reveal key={entry.key}>
                 <EntryRow entry={entry} href={projectHref(locale, entry.key)} />
               </Reveal>
             ))}
