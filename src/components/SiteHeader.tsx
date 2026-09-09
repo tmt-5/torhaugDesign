@@ -22,7 +22,7 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
       />
 
       <Image
-        src="/images/avatar.webp"
+        src="/images/avatar.jpeg"
         alt={a11y.avatarAlt}
         width={92}
         height={92}
