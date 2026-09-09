@@ -63,17 +63,13 @@ export default async function ProjectPage({
   if (!project) notFound();
 
   const { caseStudy } = project;
-  const isSideProject = dictionary.sideProjects.entries.some(
-    (entry) => entry.key === slug,
-  );
-  const sectionId = isSideProject ? dictionary.sideProjects.id : dictionary.projects.id;
 
   return (
     <main className="py-page">
       <Container as="article">
         <ProjectHeader
           locale={locale}
-          backHref={`/${locale}#${sectionId}`}
+          backHref={`/${locale}`}
           backLabel={dictionary.projectPage.back}
           languageLabel={dictionary.a11y.languageLabel}
           period={project.period}
