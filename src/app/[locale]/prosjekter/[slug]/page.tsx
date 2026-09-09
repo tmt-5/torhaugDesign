@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { CaseStudyBlocks } from "@/components/case-study/CaseStudyBlocks";
 import { ProjectHeader } from "@/components/case-study/ProjectHeader";
+import { ScrollProgress } from "@/components/motion/ScrollProgress";
 import { Container } from "@/components/ui/Container";
 import { getDictionary } from "@/lib/dictionary";
 import { isLocale, locales } from "@/lib/i18n";
@@ -66,6 +67,7 @@ export default async function ProjectPage({
 
   return (
     <main className="py-page">
+      <ScrollProgress />
       <Container as="article">
         <ProjectHeader
           locale={locale}
