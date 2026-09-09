@@ -25,7 +25,7 @@ export function EntryRow({ entry, href }: EntryRowProps) {
   const content = (
     <div className="flex items-start gap-(--col-gap)">
       {entry.logo ? (
-        <span className="relative mt-1 block size-8 shrink-0 overflow-hidden rounded-[6px]">
+        <span className="relative mt-1 block size-8 shrink-0 overflow-hidden rounded-md">
           <Image
             src={entry.logo.src}
             alt={entry.logo.alt}

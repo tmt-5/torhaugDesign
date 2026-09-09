@@ -7,6 +7,13 @@
 :root {
   color-scheme: light;
 
+  /* Every measurement below is written at its design size and multiplied by
+     this. The design reads a touch large on screen at 1:1, so the whole page
+     renders at 90% — the size it was signed off at in the browser. Tune this
+     one number to resize the page; don't pre-multiply the values themselves,
+     or they stop matching the Figma export they were measured from. */
+  --scale: 0.9;
+
   --color-canvas: #f6f6f6;
   --color-surface: #ffffff;
   --color-ink: #111111;
@@ -15,21 +22,21 @@
   --color-line: #eeeeee;
 
   /* Content column. Every row on the page aligns to this measure. */
-  --measure: 660px;
-  --gutter: 24px;
+  --measure: calc(660px * var(--scale));
+  --gutter: calc(24px * var(--scale));
 
   /* Row grid: date column | logo | text. 114 + 16 + 32 + 16 = 178px indent. */
-  --col-date: 114px;
-  --col-logo: 32px;
-  --col-gap: 16px;
+  --col-date: calc(114px * var(--scale));
+  --col-logo: calc(32px * var(--scale));
+  --col-gap: calc(16px * var(--scale));
 
   /* Case-study label|content rows (no logo) — measured from trumfPage.png. */
-  --col-label: 130px;
+  --col-label: calc(130px * var(--scale));
 
   /* Vertical rhythm. */
-  --space-section: 54px;
-  --space-row: 24px;
-  --space-page: 80px;
+  --space-section: calc(54px * var(--scale));
+  --space-row: calc(24px * var(--scale));
+  --space-page: calc(80px * var(--scale));
 
   /* Motion — one curve, three durations, so every micro-interaction on the
      page feels like it came from the same hand. */
@@ -67,14 +74,18 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* Carries --scale into every rem-based Tailwind utility (spacing, text-2xl,
+     leading-8, size-8 …). A percentage rather than a px value, so a visitor
+     who has raised their browser's default font size still gets it. */
+  font-size: calc(100% * var(--scale));
 }
 
 body {
   background-color: var(--color-canvas);
   color: var(--color-ink);
   font-family: var(--font-sans-stack);
-  font-size: 15px;
-  line-height: 27px;
+  font-size: calc(15px * var(--scale));
+  line-height: calc(27px * var(--scale));
   font-synthesis-weight: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

@@ -27,11 +27,11 @@ export function SiteHeader({ locale, dictionary }: SiteHeaderProps) {
         width={92}
         height={92}
         priority
-        className="size-[92px] shrink-0 rounded-full object-cover"
+        className="size-23 shrink-0 rounded-full object-cover"
       />
 
-      <div className="flex min-h-[92px] min-w-0 flex-1 flex-col justify-center">
-        <p className="text-ink text-[20px] leading-7">{header.name}</p>
+      <div className="flex min-h-23 min-w-0 flex-1 flex-col justify-center">
+        <p className="text-ink text-xl leading-7">{header.name}</p>
         <p className="text-ink-muted">{header.tagline}</p>
       </div>
     </Reveal>

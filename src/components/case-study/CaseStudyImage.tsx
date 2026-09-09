@@ -41,7 +41,7 @@ export function CaseStudyImage({
             ...(background ? { backgroundColor: background } : undefined),
           }}
         >
-          <Image src={src} alt={alt} fill sizes="660px" className="object-cover" />
+          <Image src={src} alt={alt} fill sizes="594px" className="object-cover" />
         </div>
 
         {caption ? (

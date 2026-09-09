@@ -83,7 +83,7 @@ export default async function FrontPage({
           </ResumeSection>
 
           <Reveal className="mt-section">
-            <p className="text-ink-muted max-w-[565px]">{dictionary.bio}</p>
+            <p className="text-ink-muted max-w-[35.3125rem]">{dictionary.bio}</p>
           </Reveal>
 
           <Reveal className="mt-section">

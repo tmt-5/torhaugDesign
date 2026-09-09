@@ -73,13 +73,13 @@ export function ProjectHeader({
 
         <div>
           <p className="text-ink-muted">{period}</p>
-          <h1 className="text-ink text-[22px] leading-8 font-normal">
+          <h1 className="text-ink text-[1.375rem] leading-8 font-normal">
             {title}
           </h1>
         </div>
       </Reveal>
 
-      <Reveal delay={0.1} className="mt-6 max-w-[565px] space-y-5">
+      <Reveal delay={0.1} className="mt-6 max-w-[35.3125rem] space-y-5">
         {description.map((paragraph) => (
           <p key={paragraph} className="text-ink-muted text-pretty">
             {paragraph}

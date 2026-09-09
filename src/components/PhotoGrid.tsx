@@ -27,7 +27,7 @@ export function PhotoGrid({
           "--mosaic-cols": columns.map((fr) => `${fr}fr`).join(" "),
         } as CSSProperties
       }
-      className="grid grid-flow-row grid-cols-2 gap-[14px] sm:aspect-[660/176] sm:grid-flow-col sm:grid-cols-[var(--mosaic-cols)] sm:grid-rows-2"
+      className="grid grid-flow-row grid-cols-2 gap-3.5 sm:aspect-[660/176] sm:grid-flow-col sm:grid-cols-[var(--mosaic-cols)] sm:grid-rows-2"
     >
       {photos.map((photo) => (
         <li
@@ -40,7 +40,7 @@ export function PhotoGrid({
             src={photo.src}
             alt={photo.alt}
             fill
-            sizes="(max-width: 640px) 50vw, 180px"
+            sizes="(max-width: 640px) 50vw, 162px"
             className="object-cover transition-transform duration-(--duration-base) ease-(--ease-soft) hover:scale-[1.04]"
           />
         </li>

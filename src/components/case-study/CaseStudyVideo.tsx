@@ -60,7 +60,10 @@ export function CaseStudyVideo({
         {maxHeight ? (
           <video
             {...videoProps}
-            style={{ aspectRatio: `${width} / ${height}`, maxHeight }}
+            style={{
+              aspectRatio: `${width} / ${height}`,
+              maxHeight: `calc(${maxHeight}px * var(--scale))`,
+            }}
             className="w-auto max-w-full rounded-xl object-cover"
           />
         ) : (

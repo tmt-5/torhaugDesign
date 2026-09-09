@@ -28,16 +28,16 @@ export function EducationRow({ entry }: { entry: EducationEntry }) {
 function ThesisCard({ card }: { card: NonNullable<EducationEntry["card"]> }) {
   const inner = (
     <>
-      <div className="relative h-full w-[40%] shrink-0 sm:w-[153px]">
+      <div className="relative h-full w-[40%] shrink-0 sm:w-[9.5625rem]">
         <Image
           src={card.thumb}
           alt={card.thumbAlt}
           fill
-          sizes="153px"
+          sizes="138px"
           className="object-cover"
         />
       </div>
-      <div className="min-w-0 flex-1 pr-4 pl-[21px]">
+      <div className="min-w-0 flex-1 pr-4 pl-[1.3125rem]">
         <p className="text-ink line-clamp-1">{card.title}</p>
         <p className="text-ink-subtle line-clamp-1">{card.subtitle}</p>
       </div>
@@ -45,7 +45,7 @@ function ThesisCard({ card }: { card: NonNullable<EducationEntry["card"]> }) {
   );
 
   const shell =
-    "border-line bg-surface mt-4 flex h-[90px] max-w-[470px] items-center overflow-hidden rounded-lg border";
+    "border-line bg-surface mt-4 flex h-[5.625rem] max-w-[29.375rem] items-center overflow-hidden rounded-lg border";
 
   if (!card.href) {
     return <div className={shell}>{inner}</div>;

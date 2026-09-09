@@ -39,7 +39,7 @@ export function LocaleSwitcher({
             aria-current={isActive ? "true" : undefined}
             title={localeNames[locale]}
             className={[
-              "rounded-full px-2 py-0.5 text-[13px] leading-6 tracking-[0.04em]",
+              "rounded-full px-2 py-0.5 text-[0.8125rem] leading-6 tracking-[0.04em]",
               "transition-colors duration-(--duration-fast) ease-(--ease-soft)",
               isActive ? "text-ink" : "text-ink-subtle hover:text-ink-muted",
             ].join(" ")}
