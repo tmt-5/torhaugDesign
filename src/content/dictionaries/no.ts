@@ -29,28 +29,28 @@ export const dictionary: Dictionary = {
         period: "2026 – Nå",
         logo: { src: "/logos/telenor.png", alt: "Telenor" },
         title: "Design lead i Telenor",
-        body: "Fornebu, Norge · Jobber på internsystemer som sørger for vi kan ta mobilnett og bredbåndstjenester for gitt i hele Norge.",
+        body: "Fornebu · Jobber på internsystemer som sørger for vi kan ta mobilnett og bredbåndstjenester for gitt i hele Norge.",
       },
       {
         key: "forte",
         period: "2022 – 2026",
         logo: { src: "/logos/forte.png", alt: "Forte Digital" },
         title: "UX designer i Forte",
-        body: "Oslo, Norge · Konsulent med mange prosjekter i sekken, og flere interne verv både sosialt og faglig.",
+        body: "Oslo · Konsulent med mange prosjekter i sekken, og flere interne verv både sosialt og faglig.",
       },
       {
         key: "politiet",
         period: "2021 – 2022",
         logo: { src: "/logos/politiet.png", alt: "Politiet" },
-        title: "Produktdesigner/UX i Politiets IT-enhet",
-        body: "Oslo, Norge · Designet komplekse sikkerhetskritiske systemer internt.",
+        title: "Digital produktdesigner i Politiets IT-enhet",
+        body: "Oslo · Designet komplekse sikkerhetskritiske systemer internt.",
       },
       {
         key: "headit",
         period: "2019",
         logo: { src: "/logos/headit.png", alt: "Headit" },
         title: "UX designer i Headit (praksis)",
-        body: "Hamar, Norge · Tiden i Headit (nå Bouvet) lærte meg kunsten å være en selvgående designer med erfaring fra flere reelle prosjekter.",
+        body: "Hamar · Tiden i Headit (nå Bouvet) lærte meg kunsten å være en selvgående designer med erfaring fra flere reelle prosjekter.",
       },
     ],
   },
@@ -87,133 +87,303 @@ export const dictionary: Dictionary = {
         title: "ASKO Servering",
         body: "UX-lead på tvers av produktteam. Involvert i flere initiativer på tvers av ASKO og NorgesGruppen Data.",
         caseStudy: {
-          title: "ASKO Servering",
-          meta: "Lead UX · 2 år",
+          title: "Skanning av varer på askoservering.no",
+          meta: "UX-designer · 2024–2025",
           intro: [
-            "ASKO Servering jobber i dag agilt med forvaltning og videreutvikling av askoservering.no og andre relaterte tjenester. Deres overordnede mål er å øke konvertering og kundelojalitet til å forbedre selvbetjening og støtte effektiv bestilling av varer.",
+            "To utdaterte apper skulle bort. Kundene som brukte dem hver dag skulle bli. Slik flyttet vi strekkodeskanning ut av appene og inn i nettbutikken.",
           ],
           blocks: [
             {
-              type: "image",
-              src: "/images/asko/gallery1-screens.webp",
-              alt: "Skjermbilder fra askoservering.no: forside, bli kunde-flyt og sortimentsside",
-              width: 1296,
-              height: 649,
-            },
-            {
               type: "sectionIntro",
-              id: "redigering-av-bestilling",
-              eyebrow: "Eksempelprosjekt",
-              title: "Redigering av bestilling",
+              id: "skanning-av-varer",
+              title: "Skanning av varer på askoservering.no",
             },
             {
-              type: "field",
-              label: "Min rolle",
-              text: "Ansvarlig for innsiktsarbeid, idéfase, prototype og testing. Samarbeidet tett med utvikling og forretning for å balansere fleksibilitet og systembegrensninger.",
-            },
-            {
-              type: "photos",
-              label: "Bilder fra prosjektarbeidet: innsikt i felt og på lager",
-              columns: [83, 181, 181, 181],
-              photos: [
-                {
-                  src: "/images/asko/gallery2-mobile.webp",
-                  alt: "Skjermbilde av tilbudsvisning på mobil",
-                  tall: true,
-                },
-                {
-                  src: "/images/asko/gallery2-meeting.webp",
-                  alt: "Team i møterom rundt en skjerm",
-                },
-                {
-                  src: "/images/asko/gallery2-truck.webp",
-                  alt: "ASKO-lastebil utenfor et lager",
-                },
-                {
-                  src: "/images/asko/gallery2-barcode.webp",
-                  alt: "Nærbilde av strekkode skannet med mobil",
-                  tall: true,
-                },
-                {
-                  src: "/images/asko/gallery2-warehouse.webp",
-                  alt: "Varehyller på lageret",
-                },
-                {
-                  src: "/images/asko/gallery2-workers.webp",
-                  alt: "Ansatte i vernevester på lageret",
-                },
+              type: "facts",
+              items: [
+                { label: "Kunde/kontekst", value: "ASKO Servering" },
+                { label: "Min rolle", value: "UX-designer" },
+                { label: "Team", value: "Produkttrio med utvikling" },
+                { label: "Periode", value: "2024–2025" },
+                { label: "Flate", value: "askoservering.no på mobil" },
               ],
             },
             {
-              type: "field",
-              label: "Utfordring",
-              text: "Funksjonen for å redigere bestillinger var lite synlig, krevde mye manuell oppfølging og førte ofte til forvirring – særlig blant brukere med lav teknisk kompetanse. Både kundeservice og markedskonsulenter rapporterte om frustrasjon, spesielt ved større ordre der det var lett å miste oversikten.",
-            },
-            {
-              type: "list",
-              label: "Overordnet prosess",
-              marker: "dot",
-              items: [
-                "Avholdt dybdeintervjuer og observasjon med kundeservice, salg og 3 større kunder",
-                // TODO: legg inn lenke til service design blueprint-dokumentet når det er tilgjengelig.
-                "Kartlegge reell brukerflyt og typiske feil ved hjelp av et service design blueprint",
-                "Utarbeidet nye konsepter basert på sentral innsikt og painpoints",
-                "Fasilitere dialog og workshops med teamet",
-                "Bygget klikkbar prototype og brukertestet med kunder",
-                "Utvikling og iterasjoner basert på tilbakemeldinger",
-                "Pushet MVP ut til en mindre andel brukere (AB-testing) for å validere ide, og bruker et opparbeidet brukerpanel for å ha dialog med superbrukere",
+              type: "prose",
+              heading: "Utgangspunktet",
+              paragraphs: [
+                "ASKO Servering hadde tre native apper bygget mellom 2012 og 2014. De var ikke lenger vedlikeholdt, én av dem hadde sluttet å virke, og internt var beskjeden tydelig:",
               ],
             },
             {
-              type: "field",
-              label: "Læring underveis",
-              text: "Vi gikk inn i prosjektet med en sterk hypotese om at «less is more» – at mindre informasjon ville gjøre bestillingsopplevelsen enklere og mer brukervennlig. Gjennom brukertesting oppdaget vi det motsatte: For vår B2B-målgruppe – kjøkkensjefer og bestillere i storkjøkken – er konteksten helt annerledes enn i typisk B2C. De gjør hyppige endringer og har behov for å få all nødvendig informasjon – som innhold, emballasje og datoer – presentert tydelig og lett tilgjengelig. Det ble en viktig erkjennelse: B2B-brukere har helt egne behov og arbeidsmåter som vi som team ikke hadde tenkt godt nok på i starten. Dette prosjektet lærte meg viktigheten av å ikke ta B2C-prinsipper for gitt i andre domener.",
-            },
-            {
-              type: "image",
-              src: "/images/asko/flow-edit-order.webp",
-              alt: "Flyten for å redigere en innsendt bestilling, vist på laptop og mobil",
-              width: 1340,
-              height: 460,
-            },
-            {
-              type: "field",
-              label: "Løsning",
-              text: "En ny og synlig «Rediger bestilling»-funksjon for hver innsendte bestilling. Kunden får oversikt over hele bestillingen, vare- og prisendringer, tydelige grenser for hva som kan / ikke kan endres, og mulighet til å gjøre små og større justeringer uten å måtte kontakte kundeservice.",
-            },
-            {
-              type: "list",
-              label: "Resultat",
-              marker: "dash",
+              type: "quotes",
               items: [
-                "Salgskonsulenter meldte om færre manuelle oppfølginger",
-                "Kunder beskrev løsningen som “enklere og mer profesjonell”",
-                "Færre henvendelser om endringer fra kundeservice",
-                "Økt tillit og kontroll hos kundene",
+                "«Disse appene er en sikkerhetsrisiko»",
+                "«Disse appene er dyre»",
+              ],
+            },
+            {
+              type: "prose",
+              paragraphs: [
+                "Samtidig gikk det over en milliard kroner i omsetning gjennom Mobilhandel-appen hvert år, og andelen mobilbrukere på web hadde falt to år på rad. Å skru av appene uten videre var ikke et alternativ. Oppgaven var å finne ut hva kundene faktisk brukte appene til, og om det kunne løses på web i stedet.",
               ],
             },
             {
               type: "image",
-              src: "/images/asko/hero-laptop-callout.webp",
-              alt: "Ny visning i redigeringsflyten som viser oversikt over endringer, med en forklarende callout",
-              width: 1280,
-              height: 780,
-            },
-            {
-              type: "closing",
-              heading: "Eksempler på andre tiltak jeg har jobbet med",
-              items: [
-                "Nye forsider for ulike brukergrupper: En versjon for påloggede kunder med fokus på oppsalg og relevante tilbud, og en for ikke-påloggede med tydelig budskap og rekrutteringsfokus.",
-                "Forbedret brukeropplevelse ved reklamasjon og kundenes dialog med kundeservice.",
-                'Forbedret kjøpsknapp og pakningsinformasjon: Utforsket alternativer til "Kjøp"-knappen og visuelle grep for å skille pakningsnivå.',
-              ],
-            },
-            {
-              type: "image",
-              src: "/images/asko/closing-homepage.webp",
-              alt: "Forsiden til askoservering.no",
+              src: "/cases/asko-skanning/side-05.jpg",
+              alt: "Kundene ser bort fra askoservering.no og mot de to native appene",
               width: 1296,
-              height: 830,
+              height: 729,
+              caption:
+                "Målet: gjøre nettbutikken til stedet kundene faktisk vil være.",
+            },
+            {
+              type: "prose",
+              heading: "To hypoteser å teste",
+              paragraphs: [
+                "Vi ville ikke bygge en app-erstatning på gjetning. Vi formulerte to hypoteser og bestemte hva vi måtte vite for å svare på dem.",
+              ],
+            },
+            {
+              type: "step",
+              phase: "Hypotese 1",
+              heading:
+                "Mange brukere foretrekker å handle via mobil, men vi er usikre på hvordan.",
+              paragraphs: [
+                "Underspørsmål: Hvordan handler kundene på mobil i dag? Hva fungerer, og hva gjør det ikke?",
+              ],
+            },
+            {
+              type: "step",
+              phase: "Hypotese 2",
+              heading:
+                "Skanning av varer på askoservering.no gir en bedre brukeropplevelse, særlig for nye kunder innen kiosk og servicehandel.",
+              paragraphs: [
+                "Underspørsmål: Hvordan ivaretar vi samtidig de eksisterende kundene som sier at dagens løsning fungerer fint?",
+              ],
+            },
+            {
+              type: "prose",
+              heading: "Slik gikk jeg frem",
+            },
+            {
+              type: "step",
+              phase: "Innsikt",
+              heading: "Ut til kundene",
+              paragraphs: [
+                "Kundebesøk hos kafeer og kiosker, samtaler i kundepanelet, og observasjon av hvordan bestillinger faktisk blir gjort — i trange lokaler, på lager, mellom andre oppgaver.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-12.jpg",
+              alt: "Bilder fra kundebesøk",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Innsikt",
+              heading: "Innsikten ble delt, ikke arkivert",
+              paragraphs: [
+                "Alle funn ble dokumentert i et innsiktsbibliotek som hele avdelingen kunne søke i og bidra til. Det gjorde at beslutningene senere i prosjektet kunne peke tilbake på noe konkret.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-14.jpg",
+              alt: "Innsiktsbibliotek med rapporter fra kundebesøk og brukertester",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Konklusjon",
+              heading: "Hypotese 1 falt — og det var en god nyhet",
+              paragraphs: [
+                "Mobilhandelen fulgte et fast mønster: logg inn, se på kampanjer, gå gjennom den oppsatte handlelisten, til kassen, send bestilling. Nettbutikken dekket dette allerede. Det trengtes bare mindre justeringer, ikke en ny app.",
+                "Hypotese 2 sto igjen, men med en tydelig risiko: skanning er krevende å få til godt nok i en nettleser. Det var her innsatsen måtte ligge.",
+              ],
+            },
+            {
+              type: "step",
+              phase: "Versjon 1",
+              heading: "Kamera i søkefeltet",
+              paragraphs: [
+                "Første versjon la et kameraikon i søkefeltet og gjenkjente strekkoder automatisk. Vi demonstrerte flyten bredt internt for å samle tilbakemeldinger tidlig.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-19.jpg",
+              alt: "Wireframes av versjon 1: forside, kameravisning og treff på vare",
+              width: 1296,
+              height: 729,
+              caption:
+                "Versjon 1: automatisk gjenkjenning, ett treff av gangen.",
+            },
+            {
+              type: "step",
+              phase: "Forankring",
+              heading: "Demo før test",
+              paragraphs: [
+                "Hele flyten ble lagt ut skjerm for skjerm, med åpen invitasjon til å kommentere. Det fanget opp responsivitet, feilsituasjoner og kanttilfeller før vi brukte kundenes tid.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-18.jpg",
+              alt: "Demo av hele flyten med kommentarer fra teamet",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Brukertest",
+              heading: "Testet på ekte emballasje",
+              paragraphs: [
+                "Vi bygget en testvegg med strekkoder og faktiske produkter, og testet på flere telefoner. Funnene var utvetydige.",
+              ],
+              items: [
+                "Automatisk gjenkjenning var lite effektivt i praksis",
+                "Kameraet plukket opp nabostrekkoder når de sto tett",
+                "Stor forskjell mellom enheter og kamerakvalitet",
+                "Gjenskinn i emballasje gjorde koden vanskelig å lese",
+                "Svak bekreftelse på at varen var lagt i kurven, så folk skannet på nytt",
+              ],
+            },
+            {
+              type: "quotes",
+              items: [
+                "«Jeg blir litt stressa at den hopper sånn hele tiden»",
+                "«Nå begynner jeg å bli usikker på om det er jeg som er dårlig på å skanne»",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-20.jpg",
+              alt: "Testoppsett med strekkoder og produkter festet på vegg",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Versjon 2",
+              heading: "Fra automatikk til kontroll",
+              paragraphs: [
+                "Vi ga brukeren styringen tilbake, og gjorde skanning til noe man gjør bevisst — ikke noe som skjer.",
+              ],
+            },
+            {
+              type: "points",
+              items: [
+                {
+                  title: "Hold inne for å skanne",
+                  body: "Brukeren bestemmer når koden leses, og slipper at kameraet hopper mellom varer.",
+                },
+                {
+                  title: "Liste med teller",
+                  body: "Skannede varer samles i en liste med antall, så det er aldri tvil om at varen ble registrert.",
+                },
+                {
+                  title: "Manuell strekkode",
+                  body: "Kan koden ikke leses, taster man den inn i stedet for å gi opp.",
+                },
+                {
+                  title: "Tåler dårlig nett",
+                  body: "Varer som ikke kan slås opp legges i kø til nettet er tilbake — kjellerlager var et reelt scenario.",
+                },
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-23.jpg",
+              alt: "Wireframes av versjon 2: egen skanneinngang, hold inne for å skanne, liste over skannede varer, manuell inntasting og offline-håndtering",
+              width: 1296,
+              height: 729,
+              caption:
+                "Versjon 2: bevisst skanning, samlet liste, og fallback når noe ikke virker.",
+            },
+            {
+              type: "step",
+              phase: "Versjon 3",
+              heading: "Validert ute i feltet",
+              paragraphs: [
+                "Løsningen ble testet hos kunder i deres egne lokaler, med deres egne varer og deres egne telefoner. Vi ble utfordret på ting vi ikke hadde sett på kontoret, og rettet det før bred lansering.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-25.jpg",
+              alt: "Skanning testet i reelle omgivelser hos kunde",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "prose",
+              heading: "Effekten",
+              paragraphs: [
+                "Skanning ble lansert som en soft launch og vokste jevnt gjennom 2025, uten kampanje.",
+              ],
+            },
+            {
+              type: "stats",
+              items: [
+                {
+                  value: "13 → 801",
+                  label:
+                    "skanninger i perioden, fra februar til september 2025",
+                },
+                { value: "7 → 656", label: "besøk som bruker funksjonen" },
+                {
+                  value: "139",
+                  label: "skanninger på det høyeste enkeltdøgnet",
+                },
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-26.jpg",
+              alt: "Analyseverktøy som viser vekst i bruk av skannefunksjonen gjennom 2025",
+              width: 1296,
+              height: 729,
+              caption:
+                "Bruken øker jevnt gjennom hele perioden, med tydelig ukesrytme.",
+            },
+            {
+              type: "quotes",
+              items: [
+                "«Når skal dere tilby skanning til reklamasjoner?»",
+                "«Når skal dere tilby skanning til varetelling?»",
+                "«Når skal dere tilby skanning til retur?»",
+              ],
+            },
+            {
+              type: "prose",
+              paragraphs: [
+                "Den tydeligste effekten var ikke tallene, men at kundene begynte å spørre etter mer. Funksjonen gikk fra å være en app-erstatning til å bli en byggekloss i flere arbeidsflyter.",
+              ],
+            },
+            {
+              type: "prose",
+              heading: "Det jeg tar med videre",
+            },
+            {
+              type: "points",
+              items: [
+                {
+                  title: "Vekt designprosessen etter problemet",
+                  body: "Hypotese 1 ble avkreftet raskt og billig. Det frigjorde tid til det som faktisk var vanskelig.",
+                },
+                {
+                  title: "Nysgjerrighet gir bedre produkter",
+                  body: "De viktigste funnene kom av å være til stede der varene faktisk mottas, ikke av å lese om det.",
+                },
+                {
+                  title: "Tidlig lansering slår lang polering",
+                  body: "Rask iterasjon og en tidlig soft launch ga tilbakemeldinger vi ikke kunne fått på kontoret.",
+                },
+              ],
             },
           ],
         },
@@ -623,7 +793,7 @@ export const dictionary: Dictionary = {
     ],
   },
 
-  bio: "Nysgjerrig, engasjert og alltid med en penn eller kaffe i hånda. Jeg tror gode brukeropplevelser skapes med innsikt, empati og faglig nysgjerrighet. Det strever jeg etter hver dag. Når arbeidsdagen er over, finner du meg gjerne i løpesko, med et glass vin, på jakt etter Eurobonus-poeng – eller i dyp analyse av Manchester United.",
+  bio: "Nysgjerrig, engasjert og alltid med en penn eller kaffe i hånda. Jeg tror gode brukeropplevelser skapes med innsikt, empati og faglig nysgjerrighet. Det strever jeg etter hver dag. Når arbeidsdagen er over, finner du meg gjerne i løpesko, med et glass vin, på jakt etter Eurobonus-poeng eller i dyp analyse av Manchester United.",
 
   projectPage: {
     back: "Tilbake til forsiden",

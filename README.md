@@ -86,11 +86,17 @@ Block types (`CaseStudyBlock` in `content/dictionaries/types.ts`, rendered by
 
 | type | renders |
 | --- | --- |
-| `image` | a full-measure supporting image |
-| `sectionIntro` | eyebrow + heading that opens a deep-dive, with an anchor id |
+| `image` | a full-measure supporting image, with an optional `caption` |
+| `sectionIntro` | heading that opens a deep-dive, with an anchor id and an optional eyebrow |
+| `prose` | a section heading, the paragraphs under it, or either alone |
+| `facts` | compact label\|value rows — client, role, team, period, surface |
 | `field` | a label\|content prose row, optionally with one inline link |
 | `role` | a label\|content row: an intro line + one paragraph per team |
 | `list` | a label\|content bullet list (`marker: "dot"` or `"dash"`) |
+| `step` | one step of a process: phase\|heading, prose and optional findings |
+| `points` | named changes or takeaways — a title and one explanation each |
+| `quotes` | verbatim quotes shown as one group |
+| `stats` | key numbers — the figure, then what it counts |
 | `photos` | a tall/narrow mosaic (`PhotoGrid`, with a `columns` fr-array) |
 | `closing` | the "other initiatives" list — plain paragraphs, no labels |
 

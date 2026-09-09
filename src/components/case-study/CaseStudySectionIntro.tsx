@@ -2,7 +2,7 @@ import { Reveal } from "@/components/motion/Reveal";
 
 type CaseStudySectionIntroProps = {
   id: string;
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
 };
 
@@ -23,10 +23,10 @@ export function CaseStudySectionIntro({
       aria-labelledby={`${id}-heading`}
       className="mt-section scroll-mt-8"
     >
-      <p className="text-ink-subtle italic">{eyebrow}</p>
+      {eyebrow ? <p className="text-ink-subtle italic">{eyebrow}</p> : null}
       <h2
         id={`${id}-heading`}
-        className="text-ink mt-2 text-2xl leading-8 font-normal tracking-[-0.01em] text-pretty"
+        className={`text-ink text-2xl leading-8 font-normal tracking-[-0.01em] text-pretty ${eyebrow ? "mt-2" : ""}`.trim()}
       >
         {title}
       </h2>

@@ -7,6 +7,8 @@ type CaseStudyImageProps = {
   alt: string;
   width: number;
   height: number;
+  /** Line under the image, in the quietest ink. */
+  caption?: string;
   /** Rounded panel background, matching the design's lavender onboarding card. */
   background?: string;
 };
@@ -21,23 +23,32 @@ export function CaseStudyImage({
   alt,
   width,
   height,
+  caption,
   background,
 }: CaseStudyImageProps) {
   return (
     <Reveal className="mt-section">
-      <div
-        className="overflow-hidden rounded-xl"
-        style={background ? { backgroundColor: background } : undefined}
-      >
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          sizes="660px"
-          className="h-auto w-full"
-        />
-      </div>
+      <figure>
+        <div
+          className="overflow-hidden rounded-xl"
+          style={background ? { backgroundColor: background } : undefined}
+        >
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            sizes="660px"
+            className="h-auto w-full"
+          />
+        </div>
+
+        {caption ? (
+          <figcaption className="text-ink-subtle mt-2 text-pretty">
+            {caption}
+          </figcaption>
+        ) : null}
+      </figure>
     </Reveal>
   );
 }

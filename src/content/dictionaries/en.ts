@@ -29,28 +29,28 @@ export const dictionary: Dictionary = {
         period: "2026 – Now",
         logo: { src: "/logos/telenor.png", alt: "Telenor" },
         title: "Design lead at Telenor",
-        body: "Fornebu, Norway · Working on the internal systems that let all of Norway take mobile and broadband services for granted.",
+        body: "Fornebu · Working on the internal systems that let all of Norway take mobile and broadband services for granted.",
       },
       {
         key: "forte",
         period: "2022 – 2026",
         logo: { src: "/logos/forte.png", alt: "Forte Digital" },
         title: "UX designer at Forte",
-        body: "Oslo, Norway · Consultant with a long list of projects behind me, and several internal roles both social and professional.",
+        body: "Oslo · Consultant with a long list of projects behind me, and several internal roles both social and professional.",
       },
       {
         key: "politiet",
         period: "2021 – 2022",
         logo: { src: "/logos/politiet.png", alt: "The Norwegian Police" },
-        title: "Product designer/UX at the Norwegian Police IT unit",
-        body: "Oslo, Norway · Designed complex, security-critical systems in-house.",
+        title: "Digital product designer at the Norwegian Police IT unit",
+        body: "Oslo · Designed complex, security-critical systems in-house.",
       },
       {
         key: "headit",
         period: "2019",
         logo: { src: "/logos/headit.png", alt: "Headit" },
         title: "UX designer at Headit (internship)",
-        body: "Hamar, Norway · My time at Headit (now Bouvet) taught me the craft of being a self-directed designer, with experience from several real projects.",
+        body: "Hamar · My time at Headit (now Bouvet) taught me the craft of being a self-directed designer, with experience from several real projects.",
       },
     ],
   },
@@ -87,134 +87,298 @@ export const dictionary: Dictionary = {
         title: "ASKO Servering",
         body: "UX lead across product teams. Involved in several initiatives spanning ASKO and NorgesGruppen Data.",
         caseStudy: {
-          title: "ASKO Servering",
-          meta: "Lead UX · 2 years",
+          title: "Scanning goods on askoservering.no",
+          meta: "UX designer · 2024–2025",
           intro: [
-            "ASKO Servering works in an agile way on the upkeep and continued development of askoservering.no and other related services. Their overarching goal is to increase conversion and customer loyalty by improving self-service and supporting efficient ordering of goods.",
+            "Two outdated apps had to go. The customers who used them every day had to stay. This is how we moved barcode scanning out of the apps and into the webshop.",
           ],
           blocks: [
             {
-              type: "image",
-              src: "/images/asko/gallery1-screens.webp",
-              alt: "Screens from askoservering.no: the homepage, the become-a-customer flow, and the range page",
-              width: 1296,
-              height: 649,
-            },
-            {
               type: "sectionIntro",
-              id: "redigering-av-bestilling",
-              eyebrow: "Example project",
-              title: "Editing an order",
+              id: "skanning-av-varer",
+              title: "Scanning goods on askoservering.no",
             },
             {
-              type: "field",
-              label: "My role",
-              text: "Responsible for research, ideation, prototyping and testing. Worked closely with engineering and the business side to balance flexibility against system constraints.",
-            },
-            {
-              type: "photos",
-              label:
-                "Photos from the project: research in the field and in the warehouse",
-              columns: [83, 181, 181, 181],
-              photos: [
-                {
-                  src: "/images/asko/gallery2-mobile.webp",
-                  alt: "Screenshot of a promotions view on mobile",
-                  tall: true,
-                },
-                {
-                  src: "/images/asko/gallery2-meeting.webp",
-                  alt: "Team in a meeting room around a screen",
-                },
-                {
-                  src: "/images/asko/gallery2-truck.webp",
-                  alt: "An ASKO truck outside a warehouse",
-                },
-                {
-                  src: "/images/asko/gallery2-barcode.webp",
-                  alt: "Close-up of a barcode being scanned with a phone",
-                  tall: true,
-                },
-                {
-                  src: "/images/asko/gallery2-warehouse.webp",
-                  alt: "Shelving in the warehouse",
-                },
-                {
-                  src: "/images/asko/gallery2-workers.webp",
-                  alt: "Staff in hi-vis vests in the warehouse",
-                },
+              type: "facts",
+              items: [
+                { label: "Client/context", value: "ASKO Servering" },
+                { label: "My role", value: "UX designer" },
+                { label: "Team", value: "Product trio with engineering" },
+                { label: "Period", value: "2024–2025" },
+                { label: "Surface", value: "askoservering.no on mobile" },
               ],
             },
             {
-              type: "field",
-              label: "Challenge",
-              text: "The feature for editing an order had low visibility, required a lot of manual follow-up, and often caused confusion — especially among users with lower technical confidence. Both customer service and sales consultants reported frustration, particularly on larger orders where it was easy to lose track.",
-            },
-            {
-              type: "list",
-              label: "Overall process",
-              marker: "dot",
-              items: [
-                "Held in-depth interviews and observation sessions with customer service, sales and 3 major customers",
-                // TODO: link to the service design blueprint document once it's available.
-                "Mapped the real user flow and common failure points using a service design blueprint",
-                "Developed new concepts based on core insights and pain points",
-                "Facilitated dialogue and workshops with the team",
-                "Built a clickable prototype and user-tested it with customers",
-                "Development and iteration based on feedback",
-                "Rolled the MVP out to a small share of users (A/B testing) to validate the idea, and used an established user panel to stay in dialogue with power users",
+              type: "prose",
+              heading: "The starting point",
+              paragraphs: [
+                "ASKO Servering had three native apps built between 2012 and 2014. They were no longer maintained, one of them had stopped working, and internally the message was clear:",
               ],
             },
             {
-              type: "field",
-              label: "Learning along the way",
-              text: "We went into the project with a strong hypothesis that 'less is more' — that less information would make the ordering experience simpler and more user-friendly. Through user testing we discovered the opposite: for our B2B audience — chefs and buyers in commercial kitchens — the context is completely different from typical B2C. They make frequent changes and need all the necessary information — like contents, packaging and dates — presented clearly and within easy reach. It became an important realisation: B2B users have entirely their own needs and ways of working that we as a team hadn't thought through well enough at the start. This project taught me the importance of not taking B2C principles for granted in other domains.",
-            },
-            {
-              type: "image",
-              src: "/images/asko/flow-edit-order.webp",
-              alt: "The flow for editing a submitted order, shown on laptop and mobile",
-              width: 1340,
-              height: 460,
-            },
-            {
-              type: "field",
-              label: "Solution",
-              text: 'A new, visible "Edit order" feature for every submitted order. Customers get an overview of the whole order, item and price changes, clear limits on what can and can\'t be changed, and the ability to make small and larger adjustments without having to contact customer service.',
-            },
-            {
-              type: "list",
-              label: "Result",
-              marker: "dash",
+              type: "quotes",
               items: [
-                "Sales consultants reported fewer manual follow-ups",
-                "Customers described the solution as “simpler and more professional”",
-                "Fewer enquiries about changes from customer service",
-                "Increased trust and sense of control among customers",
+                "“These apps are a security risk”",
+                "“These apps are expensive”",
+              ],
+            },
+            {
+              type: "prose",
+              paragraphs: [
+                "At the same time, over a billion kroner in revenue went through the Mobilhandel app every year, and the share of mobile users on the web had fallen two years running. Switching the apps off just like that wasn't an option. The task was to find out what customers actually used the apps for, and whether it could be solved on the web instead.",
               ],
             },
             {
               type: "image",
-              src: "/images/asko/hero-laptop-callout.webp",
-              alt: "A new view in the editing flow showing an overview of changes, with an explanatory callout",
-              width: 1280,
-              height: 780,
-            },
-            {
-              type: "closing",
-              heading: "Examples of other initiatives I've worked on",
-              items: [
-                "New homepages for different user groups: a version for signed-in customers focused on upsell and relevant offers, and one for signed-out visitors with a clear message and a recruitment focus.",
-                "Improved the user experience around complaints and customers' dialogue with customer service.",
-                'Improved purchase button and packaging information: explored alternatives to the "Buy" button and visual cues to distinguish packaging levels.',
-              ],
-            },
-            {
-              type: "image",
-              src: "/images/asko/closing-homepage.webp",
-              alt: "The askoservering.no homepage",
+              src: "/cases/asko-skanning/side-05.jpg",
+              alt: "Customers looking away from askoservering.no and towards the two native apps",
               width: 1296,
-              height: 830,
+              height: 729,
+              caption:
+                "The goal: make the webshop the place customers actually want to be.",
+            },
+            {
+              type: "prose",
+              heading: "Two hypotheses to test",
+              paragraphs: [
+                "We didn't want to build an app replacement on guesswork. We formulated two hypotheses and decided what we needed to know to answer them.",
+              ],
+            },
+            {
+              type: "step",
+              phase: "Hypothesis 1",
+              heading:
+                "Many users prefer to shop via mobile, but we're unsure how.",
+              paragraphs: [
+                "Sub-question: How do customers shop on mobile today? What works, and what doesn't?",
+              ],
+            },
+            {
+              type: "step",
+              phase: "Hypothesis 2",
+              heading:
+                "Scanning goods on askoservering.no gives a better user experience, especially for new customers in kiosks and convenience retail.",
+              paragraphs: [
+                "Sub-question: How do we at the same time look after the existing customers who say today's solution works fine?",
+              ],
+            },
+            {
+              type: "prose",
+              heading: "How I went about it",
+            },
+            {
+              type: "step",
+              phase: "Research",
+              heading: "Out to the customers",
+              paragraphs: [
+                "Customer visits to cafés and kiosks, conversations in the customer panel, and observation of how orders actually get made — in cramped premises, in the stockroom, between other tasks.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-12.jpg",
+              alt: "Photos from customer visits",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Research",
+              heading: "The research was shared, not filed away",
+              paragraphs: [
+                "Every finding was documented in a research library the whole department could search and contribute to. It meant decisions later in the project could point back to something concrete.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-14.jpg",
+              alt: "Research library with reports from customer visits and user tests",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Conclusion",
+              heading: "Hypothesis 1 fell — and that was good news",
+              paragraphs: [
+                "Mobile ordering followed a fixed pattern: log in, look at the campaigns, work through the set shopping list, go to checkout, send the order. The webshop already covered this. It only needed minor adjustments, not a new app.",
+                "Hypothesis 2 remained, but with a clear risk: scanning is demanding to get good enough in a browser. This was where the effort had to go.",
+              ],
+            },
+            {
+              type: "step",
+              phase: "Version 1",
+              heading: "Camera in the search field",
+              paragraphs: [
+                "The first version put a camera icon in the search field and recognised barcodes automatically. We demoed the flow widely internally to gather feedback early.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-19.jpg",
+              alt: "Wireframes of version 1: the homepage, the camera view and a product match",
+              width: 1296,
+              height: 729,
+              caption: "Version 1: automatic recognition, one match at a time.",
+            },
+            {
+              type: "step",
+              phase: "Buy-in",
+              heading: "Demo before test",
+              paragraphs: [
+                "The whole flow was laid out screen by screen, with an open invitation to comment. It caught responsiveness, error states and edge cases before we spent customers' time.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-18.jpg",
+              alt: "Demo of the whole flow with comments from the team",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "User test",
+              heading: "Tested on real packaging",
+              paragraphs: [
+                "We built a test wall with barcodes and actual products, and tested on several phones. The findings were unambiguous.",
+              ],
+              items: [
+                "Automatic recognition wasn't very effective in practice",
+                "The camera picked up neighbouring barcodes when they sat close together",
+                "Big differences between devices and camera quality",
+                "Glare on the packaging made the code hard to read",
+                "Weak confirmation that the item had been added to the basket, so people scanned again",
+              ],
+            },
+            {
+              type: "quotes",
+              items: [
+                "“I get a bit stressed that it jumps around like that all the time”",
+                "“Now I'm starting to wonder whether I'm the one who's bad at scanning”",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-20.jpg",
+              alt: "Test setup with barcodes and products fixed to a wall",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "step",
+              phase: "Version 2",
+              heading: "From automatic to in control",
+              paragraphs: [
+                "We gave the user control back, and made scanning something you do deliberately — not something that happens.",
+              ],
+            },
+            {
+              type: "points",
+              items: [
+                {
+                  title: "Press and hold to scan",
+                  body: "The user decides when the code is read, and avoids the camera jumping between items.",
+                },
+                {
+                  title: "List with a counter",
+                  body: "Scanned items are collected in a list with quantities, so there's never any doubt that an item was registered.",
+                },
+                {
+                  title: "Manual barcode",
+                  body: "If the code can't be read, you type it in instead of giving up.",
+                },
+                {
+                  title: "Handles a poor connection",
+                  body: "Items that can't be looked up are queued until the network is back — a basement stockroom was a real scenario.",
+                },
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-23.jpg",
+              alt: "Wireframes of version 2: a dedicated scanning entry point, press and hold to scan, a list of scanned items, manual entry and offline handling",
+              width: 1296,
+              height: 729,
+              caption:
+                "Version 2: deliberate scanning, a collected list, and a fallback when something doesn't work.",
+            },
+            {
+              type: "step",
+              phase: "Version 3",
+              heading: "Validated out in the field",
+              paragraphs: [
+                "The solution was tested with customers in their own premises, with their own goods and their own phones. We were challenged on things we hadn't seen in the office, and fixed them before the broad launch.",
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-25.jpg",
+              alt: "Scanning tested in real surroundings at a customer's premises",
+              width: 1296,
+              height: 729,
+            },
+            {
+              type: "prose",
+              heading: "The effect",
+              paragraphs: [
+                "Scanning was released as a soft launch and grew steadily through 2025, without a campaign.",
+              ],
+            },
+            {
+              type: "stats",
+              items: [
+                {
+                  value: "13 → 801",
+                  label: "scans in the period, from February to September 2025",
+                },
+                { value: "7 → 656", label: "visits using the feature" },
+                { value: "139", label: "scans on the single busiest day" },
+              ],
+            },
+            {
+              type: "image",
+              src: "/cases/asko-skanning/side-26.jpg",
+              alt: "Analytics showing growth in use of the scanning feature through 2025",
+              width: 1296,
+              height: 729,
+              caption:
+                "Usage grows steadily through the whole period, with a clear weekly rhythm.",
+            },
+            {
+              type: "quotes",
+              items: [
+                "“When will you offer scanning for complaints?”",
+                "“When will you offer scanning for stocktaking?”",
+                "“When will you offer scanning for returns?”",
+              ],
+            },
+            {
+              type: "prose",
+              paragraphs: [
+                "The clearest effect wasn't the numbers, but that customers started asking for more. The feature went from being an app replacement to becoming a building block in several workflows.",
+              ],
+            },
+            {
+              type: "prose",
+              heading: "What I'm taking with me",
+            },
+            {
+              type: "points",
+              items: [
+                {
+                  title: "Weight the design process to the problem",
+                  body: "Hypothesis 1 was disproved quickly and cheaply. That freed up time for what was actually hard.",
+                },
+                {
+                  title: "Curiosity makes better products",
+                  body: "The most important findings came from being present where the goods are actually received, not from reading about it.",
+                },
+                {
+                  title: "Launching early beats polishing long",
+                  body: "Fast iteration and an early soft launch gave us feedback we couldn't have got in the office.",
+                },
+              ],
             },
           ],
         },
@@ -626,7 +790,7 @@ export const dictionary: Dictionary = {
     ],
   },
 
-  bio: "Curious, engaged, and always with a pen or a coffee in hand. I believe good user experiences are built on insight, empathy and professional curiosity — that is what I aim for every day. When the working day is over you will usually find me in running shoes, with a glass of wine, chasing Eurobonus points — or deep in analysis of Manchester United.",
+  bio: "Curious, engaged, and always with a pen or a coffee in hand. I believe good user experiences are built on insight, empathy and professional curiosity — that is what I aim for every day. When the working day is over you will usually find me in running shoes, with a glass of wine, chasing Eurobonus points - or deep in analysis of Manchester United.",
 
   projectPage: {
     back: "Back to the front page",

@@ -94,9 +94,35 @@ export type InlineLink = {
 
 export type CaseStudyBlock =
   /** A full-measure supporting image — a flattened screenshot montage or mockup. */
-  | { type: "image"; src: string; alt: string; width: number; height: number }
+  | {
+      type: "image";
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+      /** Caption under the image, in the quietest ink. */
+      caption?: string;
+    }
   /** Opens a deep-dive into one example project, e.g. "Eksempelprosjekt". */
-  | { type: "sectionIntro"; id: string; eyebrow: string; title: string }
+  | { type: "sectionIntro"; id: string; eyebrow?: string; title: string }
+  /** A section heading, the prose under it, or both. */
+  | { type: "prose"; heading?: string; paragraphs?: string[] }
+  /** Verbatim quotes — internal voices, test participants, customers. */
+  | { type: "quotes"; items: string[] }
+  /** Compact label|value rows: client, role, team, period, surface. */
+  | { type: "facts"; items: { label: string; value: string }[] }
+  /** One step of a process: phase | heading, prose and optional findings. */
+  | {
+      type: "step";
+      phase: string;
+      heading: string;
+      paragraphs: string[];
+      items?: string[];
+    }
+  /** Named changes or takeaways — a title and one explanation each. */
+  | { type: "points"; items: { title: string; body: string }[] }
+  /** Key numbers — the figure, then what it counts. */
+  | { type: "stats"; items: { value: string; label: string }[] }
   /** A label|content row of prose — plain text, or one with an inline link. */
   | { type: "field"; label: string; text?: string; link?: InlineLink }
   /** A label|content row whose content is an intro line plus per-team paragraphs. */
