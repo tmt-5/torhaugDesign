@@ -94,25 +94,24 @@ export const dictionary: Dictionary = {
           ],
           blocks: [
             {
+              type: "video",
+              src: "/cases/asko-skanning/customer-scan.mp4",
+              poster: "/cases/asko-skanning/customer-scan-poster.jpg",
+              alt: "Video som viser strekkodeskanning i praksis: en kunde skanner en vare med mobilen",
+              width: 810,
+              height: 1440,
+              maxHeight: 600,
+            },
+            {
               type: "sectionIntro",
               id: "skanning-av-varer",
               title: "Skanning av varer på askoservering.no",
             },
             {
-              type: "facts",
-              items: [
-                { label: "Kunde/kontekst", value: "ASKO Servering" },
-                { label: "Min rolle", value: "UX-designer" },
-                { label: "Team", value: "Produkttrio med utvikling" },
-                { label: "Periode", value: "2024–2025" },
-                { label: "Flate", value: "askoservering.no på mobil" },
-              ],
-            },
-            {
               type: "prose",
               heading: "Utgangspunktet",
               paragraphs: [
-                "ASKO Servering hadde tre native apper bygget mellom 2012 og 2014. De var ikke lenger vedlikeholdt, én av dem hadde sluttet å virke, og internt var beskjeden tydelig:",
+                "ASKO Servering hadde tre native apper bygget på sent 2000-tallet. Når de ikke lenger ble vedlikeholdt, satser ASKO på en ny og fresh webløsning. Tiden gikk og gikk, og plutselig så fikk vi en tydelig beskjed:",
               ],
             },
             {
@@ -125,12 +124,12 @@ export const dictionary: Dictionary = {
             {
               type: "prose",
               paragraphs: [
-                "Samtidig gikk det over en milliard kroner i omsetning gjennom Mobilhandel-appen hvert år, og andelen mobilbrukere på web hadde falt to år på rad. Å skru av appene uten videre var ikke et alternativ. Oppgaven var å finne ut hva kundene faktisk brukte appene til, og om det kunne løses på web i stedet.",
+                "Samtidig gikk det over en milliard kroner i omsetning gjennom Mobilhandel-appen hvert år, og brukerene som brukte appen var veldig fornøyd med den! Men likevel så skulle appene bort. Oppgaven vår var å finne ut hva kundene faktisk brukte appene til, og om det kunne løses på web i stedet.",
               ],
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-05.jpg",
+              src: "/cases/asko-skanning/asko-meme.jpg",
               alt: "Kundene ser bort fra askoservering.no og mot de to native appene",
               width: 1296,
               height: 729,
@@ -176,7 +175,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-12.jpg",
+              src: "/cases/asko-skanning/visitCustomer.jpg",
               alt: "Bilder fra kundebesøk",
               width: 1296,
               height: 729,
@@ -191,7 +190,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-14.jpg",
+              src: "/cases/asko-skanning/insightDocs.jpg",
               alt: "Innsiktsbibliotek med rapporter fra kundebesøk og brukertester",
               width: 1296,
               height: 729,
@@ -215,7 +214,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-19.jpg",
+              src: "/cases/asko-skanning/v1.jpg",
               alt: "Wireframes av versjon 1: forside, kameravisning og treff på vare",
               width: 1296,
               height: 729,
@@ -232,7 +231,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-18.jpg",
+              src: "/cases/asko-skanning/testQR.jpg",
               alt: "Demo av hele flyten med kommentarer fra teamet",
               width: 1296,
               height: 729,
@@ -260,9 +259,10 @@ export const dictionary: Dictionary = {
               ],
             },
             {
-              type: "image",
-              src: "/cases/asko-skanning/side-20.jpg",
-              alt: "Testoppsett med strekkoder og produkter festet på vegg",
+              type: "video",
+              src: "/cases/asko-skanning/user-test.mp4",
+              poster: "/cases/asko-skanning/user-test-poster.jpg",
+              alt: "Video av brukertest: en person skanner strekkoder på en testvegg, med skjermopptak av mobilen ved siden av",
               width: 1296,
               height: 729,
             },
@@ -297,7 +297,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-23.jpg",
+              src: "/cases/asko-skanning/v2.jpg",
               alt: "Wireframes av versjon 2: egen skanneinngang, hold inne for å skanne, liste over skannede varer, manuell inntasting og offline-håndtering",
               width: 1296,
               height: 729,
@@ -314,7 +314,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-25.jpg",
+              src: "/cases/asko-skanning/internalTest.jpg",
               alt: "Skanning testet i reelle omgivelser hos kunde",
               width: 1296,
               height: 729,
@@ -343,7 +343,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-26.jpg",
+              src: "/cases/asko-skanning/effectGraphs.jpg",
               alt: "Analyseverktøy som viser vekst i bruk av skannefunksjonen gjennom 2025",
               width: 1296,
               height: 729,

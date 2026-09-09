@@ -37,6 +37,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# raw source footage — large camera originals kept locally, not in the repo
+/raw-footage
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

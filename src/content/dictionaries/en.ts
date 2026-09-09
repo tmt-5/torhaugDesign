@@ -94,19 +94,18 @@ export const dictionary: Dictionary = {
           ],
           blocks: [
             {
+              type: "video",
+              src: "/cases/asko-skanning/customer-scan.mp4",
+              poster: "/cases/asko-skanning/customer-scan-poster.jpg",
+              alt: "Video showing barcode scanning in practice: a customer scans an item with their phone",
+              width: 810,
+              height: 1440,
+              maxHeight: 600,
+            },
+            {
               type: "sectionIntro",
               id: "skanning-av-varer",
               title: "Scanning goods on askoservering.no",
-            },
-            {
-              type: "facts",
-              items: [
-                { label: "Client/context", value: "ASKO Servering" },
-                { label: "My role", value: "UX designer" },
-                { label: "Team", value: "Product trio with engineering" },
-                { label: "Period", value: "2024–2025" },
-                { label: "Surface", value: "askoservering.no on mobile" },
-              ],
             },
             {
               type: "prose",
@@ -130,7 +129,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-05.jpg",
+              src: "/cases/asko-skanning/asko-meme.jpg",
               alt: "Customers looking away from askoservering.no and towards the two native apps",
               width: 1296,
               height: 729,
@@ -176,7 +175,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-12.jpg",
+              src: "/cases/asko-skanning/visitCustomer.jpg",
               alt: "Photos from customer visits",
               width: 1296,
               height: 729,
@@ -191,7 +190,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-14.jpg",
+              src: "/cases/asko-skanning/insightDocs.jpg",
               alt: "Research library with reports from customer visits and user tests",
               width: 1296,
               height: 729,
@@ -215,7 +214,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-19.jpg",
+              src: "/cases/asko-skanning/v1.jpg",
               alt: "Wireframes of version 1: the homepage, the camera view and a product match",
               width: 1296,
               height: 729,
@@ -231,7 +230,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-18.jpg",
+              src: "/cases/asko-skanning/testQR.jpg",
               alt: "Demo of the whole flow with comments from the team",
               width: 1296,
               height: 729,
@@ -259,9 +258,10 @@ export const dictionary: Dictionary = {
               ],
             },
             {
-              type: "image",
-              src: "/cases/asko-skanning/side-20.jpg",
-              alt: "Test setup with barcodes and products fixed to a wall",
+              type: "video",
+              src: "/cases/asko-skanning/user-test.mp4",
+              poster: "/cases/asko-skanning/user-test-poster.jpg",
+              alt: "Video of a user test: a person scans barcodes on a test wall, with a screen recording of the phone alongside",
               width: 1296,
               height: 729,
             },
@@ -296,7 +296,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-23.jpg",
+              src: "/cases/asko-skanning/v2.jpg",
               alt: "Wireframes of version 2: a dedicated scanning entry point, press and hold to scan, a list of scanned items, manual entry and offline handling",
               width: 1296,
               height: 729,
@@ -313,7 +313,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-25.jpg",
+              src: "/cases/asko-skanning/internalTest.jpg",
               alt: "Scanning tested in real surroundings at a customer's premises",
               width: 1296,
               height: 729,
@@ -338,7 +338,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/cases/asko-skanning/side-26.jpg",
+              src: "/cases/asko-skanning/effectGraphs.jpg",
               alt: "Analytics showing growth in use of the scanning feature through 2025",
               width: 1296,
               height: 729,

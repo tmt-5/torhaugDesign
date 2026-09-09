@@ -10,6 +10,7 @@ import { CaseStudyRole } from "@/components/case-study/CaseStudyRole";
 import { CaseStudySectionIntro } from "@/components/case-study/CaseStudySectionIntro";
 import { CaseStudyStats } from "@/components/case-study/CaseStudyStats";
 import { CaseStudyStep } from "@/components/case-study/CaseStudyStep";
+import { CaseStudyVideo } from "@/components/case-study/CaseStudyVideo";
 import { PhotoGrid } from "@/components/PhotoGrid";
 import { Reveal } from "@/components/motion/Reveal";
 import type { CaseStudyBlock } from "@/content/dictionaries/types";
@@ -34,6 +35,19 @@ export function CaseStudyBlocks({ blocks }: { blocks: CaseStudyBlock[] }) {
                 width={block.width}
                 height={block.height}
                 caption={block.caption}
+              />
+            );
+          case "video":
+            return (
+              <CaseStudyVideo
+                key={index}
+                src={block.src}
+                poster={block.poster}
+                alt={block.alt}
+                width={block.width}
+                height={block.height}
+                caption={block.caption}
+                maxHeight={block.maxHeight}
               />
             );
           case "sectionIntro":

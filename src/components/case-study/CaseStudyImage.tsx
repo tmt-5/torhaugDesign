@@ -17,6 +17,11 @@ type CaseStudyImageProps = {
  * A full-measure supporting image — the screenshot montage, the onboarding
  * flow composite, and the closing hero shot are all flattened exports (see
  * design/trumfPage.png), so this just renders one responsively.
+ *
+ * `width`/`height` set the frame's aspect ratio, not the source image's own —
+ * the image fills that frame with `object-cover`, so a source whose actual
+ * ratio drifts a little (a hand-picked screenshot, say) gets cropped instead
+ * of stretched. Adjust the ratio itself, or the crop, visually as needed.
  */
 export function CaseStudyImage({
   src,
@@ -30,17 +35,13 @@ export function CaseStudyImage({
     <Reveal className="mt-section">
       <figure>
         <div
-          className="overflow-hidden rounded-xl"
-          style={background ? { backgroundColor: background } : undefined}
+          className="relative overflow-hidden rounded-xl"
+          style={{
+            aspectRatio: `${width} / ${height}`,
+            ...(background ? { backgroundColor: background } : undefined),
+          }}
         >
-          <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            sizes="660px"
-            className="h-auto w-full"
-          />
+          <Image src={src} alt={alt} fill sizes="660px" className="object-cover" />
         </div>
 
         {caption ? (

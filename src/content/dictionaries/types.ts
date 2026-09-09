@@ -103,6 +103,25 @@ export type CaseStudyBlock =
       /** Caption under the image, in the quietest ink. */
       caption?: string;
     }
+  /** A supporting video — silent, autoplaying, looping. */
+  | {
+      type: "video";
+      src: string;
+      /** Poster frame shown before playback starts and under reduced motion. */
+      poster: string;
+      /** Screen-reader description — the video carries no audio or captions. */
+      alt: string;
+      width: number;
+      height: number;
+      /** Caption under the video, in the quietest ink. */
+      caption?: string;
+      /**
+       * Caps the rendered height (px) and centers the frame — for a portrait
+       * clip that would otherwise dominate the page. Omit for a full-measure
+       * video that fills the column width, same as `image`.
+       */
+      maxHeight?: number;
+    }
   /** Opens a deep-dive into one example project, e.g. "Eksempelprosjekt". */
   | { type: "sectionIntro"; id: string; eyebrow?: string; title: string }
   /** A section heading, the prose under it, or both. */
