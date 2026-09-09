@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 import "@/app/globals.css";
 import { getDictionary } from "@/lib/dictionary";
@@ -68,7 +69,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${sans.variable} h-full`}>
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
