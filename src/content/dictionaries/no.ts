@@ -405,7 +405,7 @@ export const dictionary: Dictionary = {
           blocks: [
             {
               type: "image",
-              src: "/images/trumf/gallery1-screens.webp",
+              src: "/images/trumf/gallery1-screens.jpg",
               alt: "Skjermbilder fra ulike Trumf-funksjoner: netthandel, Trumf Pay, betalingsbekreftelse og parkering",
               width: 1296,
               height: 643,
@@ -433,30 +433,30 @@ export const dictionary: Dictionary = {
               columns: [83, 83, 179, 83, 179],
               photos: [
                 {
-                  src: "/images/trumf/gallery2-insight.webp",
+                  src: "/images/trumf/gallery2-insight.jpg",
                   alt: "Innsikt-skjerm i appen med oversikt over næringsinnhold",
                   tall: true,
                 },
                 {
-                  src: "/images/trumf/gallery2-qr-card.webp",
+                  src: "/images/trumf/gallery2-qr-card.jpg",
                   alt: "Kort med QR-kode for å registrere bonus",
                 },
                 {
-                  src: "/images/trumf/gallery2-kiosk.webp",
+                  src: "/images/trumf/gallery2-kiosk.jpg",
                   alt: "Selvbetjeningskasse med skjerm i butikk",
                 },
                 {
-                  src: "/images/trumf/gallery2-meeting.webp",
+                  src: "/images/trumf/gallery2-meeting.jpg",
                   alt: "Team-kickoff for Trumf Mobil på møterom",
                   tall: true,
                 },
                 {
-                  src: "/images/trumf/gallery2-touchscreen.webp",
+                  src: "/images/trumf/gallery2-touchscreen.jpg",
                   alt: "Bruker som tester en touchskjerm i butikk",
                   tall: true,
                 },
                 {
-                  src: "/images/trumf/gallery2-presentation.webp",
+                  src: "/images/trumf/gallery2-presentation.jpg",
                   alt: "Presentasjon av beslutningsinformasjon fra workshop",
                   tall: true,
                 },
@@ -487,10 +487,10 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/trumf/onboarding-flow.webp",
+              src: "/images/trumf/onboarding-flow.jpg",
               alt: "Onboardingflyt for Trumf Pay: aktivering, QR-kort og bekreftet betaling",
               width: 1296,
-              height: 696,
+              height: 685,
             },
             {
               type: "list",
@@ -523,7 +523,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/trumf/hero.webp",
+              src: "/images/trumf/hero.jpg",
               alt: "Trumf-appens hjemskjerm med saldo, historikk og hurtigvalg",
               width: 1295,
               height: 971,
@@ -556,14 +556,14 @@ export const dictionary: Dictionary = {
           blocks: [
             {
               type: "image",
-              src: "/images/aera/gallery-screens.webp",
+              src: "/images/aera/gallery-screens.png",
               alt: "Skjermbilder fra Aeras betalingsmodul: valg av betalingsmetode i Joker og korthåndtering i Meny",
               width: 1296,
               height: 645,
             },
             {
               type: "image",
-              src: "/images/aera/evidence-checkout-mobile.webp",
+              src: "/images/aera/evidence-checkout-mobile.png",
               alt: "Bruker som betaler med kort i Aeras betalingsmodul på et nettbrett",
               width: 1036,
               height: 894,
@@ -615,7 +615,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/aera/customer-journey-map.webp",
+              src: "/images/aera/customer-journey-map.png",
               alt: "Customer journey map for HPP-konfigurasjonsportalen",
               width: 1296,
               height: 634,
@@ -627,7 +627,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/aera/evidence-hpp-configurator.webp",
+              src: "/images/aera/evidence-hpp-configurator.png",
               alt: "Skjermbilder av betalingsmodulen med gavekort og lagret kort",
               width: 1296,
               height: 859,
@@ -639,7 +639,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/aera/hero.webp",
+              src: "/images/aera/hero.png",
               alt: "Konfigurasjonsverktøyet for Aeras betalingsmodul åpent på en bærbar PC",
               width: 1296,
               height: 820,
@@ -670,7 +670,7 @@ export const dictionary: Dictionary = {
           blocks: [
             {
               type: "image",
-              src: "/images/levena/gallery-photos.webp",
+              src: "/images/levena/gallery-photos.png",
               alt: "Fire bilder fra prosjektarbeidet: fysioterapi med et barn, et barn i rullestol med et teppe, hender ved en laptop, og et smilende småbarn",
               width: 648,
               height: 323,
@@ -688,10 +688,10 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/levena/levena-website.webp",
+              src: "/images/levena/levena-website.png",
               alt: "Forsiden til Leve NÅs nettside",
               width: 648,
-              height: 308,
+              height: 468,
             },
             {
               type: "field",
@@ -704,11 +704,35 @@ export const dictionary: Dictionary = {
               text: "Ansvarlig for utarbeidelsen av nettkurset. Strukturere og visualisere faglig innhold i de ulike modulene. Samarbeid med resten av prosjektgruppen og andre relevante bidragsytere, som f.eks. andre aktuelle fagpersoner/fagmiljøer og brukerorganisasjoner.",
             },
             {
-              type: "image",
-              src: "/images/levena/course-materials.webp",
-              alt: "Utsnitt av kursmateriell: en selvhjelpsplan, en moduloversikt og mestringsstrategier",
-              width: 648,
-              height: 273,
+              type: "photos",
+              label:
+                "Utsnitt fra kursmateriellet: en selvhjelpsplan, moduloversikt, mestringsstrategier og CSNAT-I-rammeverket",
+              columns: [83, 83, 179, 83],
+              photos: [
+                {
+                  src: "/images/levena/course-materials-1.png",
+                  alt: "Eksempel på en selvhjelpsplan med kolonner for observasjoner og tiltak",
+                  tall: true,
+                },
+                {
+                  src: "/images/levena/course-materials-3.png",
+                  alt: "Oversikt over kursets fem moduler med fremdriftsindikatorer",
+                },
+                {
+                  src: "/images/levena/course-materials-4.png",
+                  alt: "Lysbilde om mestringsstrategier for pårørende",
+                },
+                {
+                  src: "/images/levena/course-materials-2.png",
+                  alt: "Horisontal tidslinje over kursets fem moduler",
+                  tall: true,
+                },
+                {
+                  src: "/images/levena/course-materials-5.png",
+                  alt: "Sekskant-diagram som viser trinnene i CSNAT-I-rammeverket",
+                  tall: true,
+                },
+              ],
             },
             {
               type: "list",
@@ -731,10 +755,10 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/levena/course-mockup.webp",
+              src: "/images/levena/course-mockup.png",
               alt: "Nettkurset vist i nettleser og på mobil, med velkomstside og et sitat fra en fagperson",
               width: 496,
-              height: 308,
+              height: 260,
             },
             {
               type: "field",
@@ -748,14 +772,14 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/levena/evaluation-graph.webp",
+              src: "/images/levena/evaluation-graph.png",
               alt: "Evalueringsresultater fra nettkurset vist som graf",
               width: 648,
               height: 360,
             },
             {
               type: "image",
-              src: "/images/levena/evaluation-answers.webp",
+              src: "/images/levena/evaluation-answers.png",
               alt: "Åpne svar fra evalueringen av nettkurset",
               width: 648,
               height: 318,
@@ -802,17 +826,17 @@ export const dictionary: Dictionary = {
   },
 
   photos: [
-    { src: "/images/life-01.webp", alt: "Pizza i steinovn", tall: true },
-    { src: "/images/life-02.webp", alt: "Tur med venner i sommerskogen" },
-    { src: "/images/life-03.webp", alt: "Slalåm i lysløypa" },
+    { src: "/images/life-01.png", alt: "Pizza i steinovn", tall: true },
+    { src: "/images/life-02.png", alt: "Tur med venner i sommerskogen" },
+    { src: "/images/life-03.png", alt: "Slalåm i lysløypa" },
     {
-      src: "/images/life-04.webp",
+      src: "/images/life-04.png",
       alt: "Fjelltur på snøflekket vidde",
       tall: true,
     },
-    { src: "/images/life-05.webp", alt: "Vinflasker på rad" },
-    { src: "/images/life-06.webp", alt: "Laptop og notater på pulten" },
-    { src: "/images/life-07.webp", alt: "Vinsmaking" },
-    { src: "/images/life-08.webp", alt: "Padelbane sett ovenfra" },
+    { src: "/images/life-05.png", alt: "Vinflasker på rad" },
+    { src: "/images/life-06.png", alt: "Laptop og notater på pulten" },
+    { src: "/images/life-07.png", alt: "Vinsmaking" },
+    { src: "/images/life-08.png", alt: "Padelbane sett ovenfra" },
   ],
 };

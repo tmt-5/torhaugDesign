@@ -400,7 +400,7 @@ export const dictionary: Dictionary = {
           blocks: [
             {
               type: "image",
-              src: "/images/trumf/gallery1-screens.webp",
+              src: "/images/trumf/gallery1-screens.jpg",
               alt: "Screens from various Trumf features: online shopping, Trumf Pay, payment confirmation and parking",
               width: 1296,
               height: 643,
@@ -428,30 +428,30 @@ export const dictionary: Dictionary = {
               columns: [83, 83, 179, 83, 179],
               photos: [
                 {
-                  src: "/images/trumf/gallery2-insight.webp",
+                  src: "/images/trumf/gallery2-insight.jpg",
                   alt: "In-app insight screen with a nutritional breakdown",
                   tall: true,
                 },
                 {
-                  src: "/images/trumf/gallery2-qr-card.webp",
+                  src: "/images/trumf/gallery2-qr-card.jpg",
                   alt: "Card with a QR code for registering bonus points",
                 },
                 {
-                  src: "/images/trumf/gallery2-kiosk.webp",
+                  src: "/images/trumf/gallery2-kiosk.jpg",
                   alt: "Self-checkout screen in a store",
                 },
                 {
-                  src: "/images/trumf/gallery2-meeting.webp",
+                  src: "/images/trumf/gallery2-meeting.jpg",
                   alt: "Team kick-off for Trumf Mobile in a meeting room",
                   tall: true,
                 },
                 {
-                  src: "/images/trumf/gallery2-touchscreen.webp",
+                  src: "/images/trumf/gallery2-touchscreen.jpg",
                   alt: "A user testing a touchscreen in-store",
                   tall: true,
                 },
                 {
-                  src: "/images/trumf/gallery2-presentation.webp",
+                  src: "/images/trumf/gallery2-presentation.jpg",
                   alt: "Presenting decision-making insights from a workshop",
                   tall: true,
                 },
@@ -482,10 +482,10 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/trumf/onboarding-flow.webp",
+              src: "/images/trumf/onboarding-flow.jpg",
               alt: "Onboarding flow for Trumf Pay: activation, QR card and confirmed payment",
               width: 1296,
-              height: 696,
+              height: 685,
             },
             {
               type: "list",
@@ -518,7 +518,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/trumf/hero.webp",
+              src: "/images/trumf/hero.jpg",
               alt: "The Trumf app's home screen with balance, history and shortcuts",
               width: 1295,
               height: 971,
@@ -551,14 +551,14 @@ export const dictionary: Dictionary = {
           blocks: [
             {
               type: "image",
-              src: "/images/aera/gallery-screens.webp",
+              src: "/images/aera/gallery-screens.png",
               alt: "Screens from Aera's payment module: choosing a payment method in Joker and card details in Meny",
               width: 1296,
               height: 645,
             },
             {
               type: "image",
-              src: "/images/aera/evidence-checkout-mobile.webp",
+              src: "/images/aera/evidence-checkout-mobile.png",
               alt: "A user paying by card in Aera's payment module on a tablet",
               width: 1036,
               height: 894,
@@ -610,7 +610,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/aera/customer-journey-map.webp",
+              src: "/images/aera/customer-journey-map.png",
               alt: "Customer journey map for the HPP customisation/configuration portal",
               width: 1296,
               height: 634,
@@ -622,7 +622,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/aera/evidence-hpp-configurator.webp",
+              src: "/images/aera/evidence-hpp-configurator.png",
               alt: "Screenshots of the payment module with gift card and a saved card",
               width: 1296,
               height: 859,
@@ -634,7 +634,7 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/aera/hero.webp",
+              src: "/images/aera/hero.png",
               alt: "The configuration tool for Aera's payment module, open on a laptop",
               width: 1296,
               height: 820,
@@ -667,7 +667,7 @@ export const dictionary: Dictionary = {
           blocks: [
             {
               type: "image",
-              src: "/images/levena/gallery-photos.webp",
+              src: "/images/levena/gallery-photos.png",
               alt: "Four photos from the project: physiotherapy with a child, a child in a wheelchair with a blanket, hands at a laptop, and a smiling toddler",
               width: 648,
               height: 323,
@@ -685,10 +685,10 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/levena/levena-website.webp",
+              src: "/images/levena/levena-website.png",
               alt: "The Leve NÅ website homepage",
               width: 648,
-              height: 308,
+              height: 468,
             },
             {
               type: "field",
@@ -701,11 +701,35 @@ export const dictionary: Dictionary = {
               text: "Responsible for developing the online course. Structured and visualised the subject matter across the different modules. Collaborated with the rest of the project group and other relevant contributors, such as other relevant specialists/professional communities and user organisations.",
             },
             {
-              type: "image",
-              src: "/images/levena/course-materials.webp",
-              alt: "Excerpts from the course materials: a self-help plan, a module overview and coping strategies",
-              width: 648,
-              height: 273,
+              type: "photos",
+              label:
+                "Excerpts from the course materials: a self-help plan, module overview, coping strategies and the CSNAT-I framework",
+              columns: [83, 83, 179, 83],
+              photos: [
+                {
+                  src: "/images/levena/course-materials-1.png",
+                  alt: "Example self-help plan template with two columns for observations and actions",
+                  tall: true,
+                },
+                {
+                  src: "/images/levena/course-materials-3.png",
+                  alt: "Overview of the five course modules with progress indicators",
+                },
+                {
+                  src: "/images/levena/course-materials-4.png",
+                  alt: "Slide on coping strategies for parents",
+                },
+                {
+                  src: "/images/levena/course-materials-2.png",
+                  alt: "Horizontal timeline of the five course modules",
+                  tall: true,
+                },
+                {
+                  src: "/images/levena/course-materials-5.png",
+                  alt: "Hexagon diagram outlining the steps of the CSNAT-I framework",
+                  tall: true,
+                },
+              ],
             },
             {
               type: "list",
@@ -728,10 +752,10 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/levena/course-mockup.webp",
+              src: "/images/levena/course-mockup.png",
               alt: "The online course shown in a browser and on mobile, with the welcome page and a quote from a specialist",
               width: 496,
-              height: 308,
+              height: 260,
             },
             {
               type: "field",
@@ -745,14 +769,14 @@ export const dictionary: Dictionary = {
             },
             {
               type: "image",
-              src: "/images/levena/evaluation-graph.webp",
+              src: "/images/levena/evaluation-graph.png",
               alt: "Evaluation results from the online course shown as a graph",
               width: 648,
               height: 360,
             },
             {
               type: "image",
-              src: "/images/levena/evaluation-answers.webp",
+              src: "/images/levena/evaluation-answers.png",
               alt: "Open-ended answers from the course evaluation",
               width: 648,
               height: 318,
@@ -799,17 +823,17 @@ export const dictionary: Dictionary = {
   },
 
   photos: [
-    { src: "/images/life-01.webp", alt: "Pizza in a stone oven", tall: true },
-    { src: "/images/life-02.webp", alt: "Hiking with friends in summer woods" },
-    { src: "/images/life-03.webp", alt: "Skiing under floodlights" },
+    { src: "/images/life-01.png", alt: "Pizza in a stone oven", tall: true },
+    { src: "/images/life-02.png", alt: "Hiking with friends in summer woods" },
+    { src: "/images/life-03.png", alt: "Skiing under floodlights" },
     {
-      src: "/images/life-04.webp",
+      src: "/images/life-04.png",
       alt: "Mountain hike across patchy snow",
       tall: true,
     },
-    { src: "/images/life-05.webp", alt: "A row of wine bottles" },
-    { src: "/images/life-06.webp", alt: "Laptop and notes on the desk" },
-    { src: "/images/life-07.webp", alt: "Wine tasting" },
-    { src: "/images/life-08.webp", alt: "A padel court seen from above" },
+    { src: "/images/life-05.png", alt: "A row of wine bottles" },
+    { src: "/images/life-06.png", alt: "Laptop and notes on the desk" },
+    { src: "/images/life-07.png", alt: "Wine tasting" },
+    { src: "/images/life-08.png", alt: "A padel court seen from above" },
   ],
 };
