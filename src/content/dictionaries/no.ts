@@ -787,6 +787,138 @@ export const dictionary: Dictionary = {
           ],
         },
       },
+      {
+        key: "emelie-hollow",
+        period: "2026 – Nå",
+        logo: { src: "/logos/emelie-hollow.png", alt: "Emelie Hollow" },
+        color: "#111111",
+        title: "Emelie Hollow",
+        body: "Nettsiden til artisten og låtskriveren Emelie Hollow – et digitalt hjem som løfter frem nye låter, selger billetter til konserter og bygger en lojal lytterbase gjennom nyhetsbrev.",
+        caseStudy: {
+          title: "Emelie Hollow",
+          meta: "2026 – Nå",
+          intro: [
+            "Nettsiden til artisten og låtskriveren Emelie Hollow – et digitalt hjem som løfter frem nye låter, selger billetter til konserter og bygger en lojal lytterbase gjennom nyhetsbrev.",
+          ],
+          blocks: [
+            {
+              type: "video",
+              src: "/images/emelieHollow/site-tour.mp4",
+              poster: "/images/emelieHollow/site-tour-poster.jpg",
+              alt: "Skjermopptak som viser nettsiden til Emelie Hollow i bruk",
+              width: 2340,
+              height: 1288,
+            },
+            {
+              type: "sectionIntro",
+              id: "et-hjem-for-artisten",
+              title: "Et hjem for artisten",
+            },
+            {
+              type: "field",
+              label: "Bakgrunn",
+              text: "Emelie Hollow er artist og låtskriver med millioner av strømminger på Spotify. Hun har vært med i «Hver gang vi møtes», og har den siste tiden stått på scenen i Operaen. Med en voksende lytterbase trengte hun et sted som var hennes eget – utenfor algoritmene og feedene i sosiale medier. Et sted der nye og eksisterende lyttere kan bli kjent med musikken, finne neste konsert og holde seg oppdatert, og der artisten og teamet hennes har kontroll på hvor trafikken går videre.",
+            },
+            {
+              type: "field",
+              label: "Mål",
+              text: "Å gi artisten et digitalt hjem som uttrykker hennes grafiske og artistiske side, og som samtidig er et verktøy: løfte frem nye utgivelser som «Neste Stasjon» og «To Stopp Unna Karl Johan», selge billetter til kommende konserter og bygge lojalitet, tillit og interesse gjennom nyhetsbrevet.",
+            },
+            {
+              type: "field",
+              label: "Min rolle",
+              text: "Ansvarlig for design, utvikling og drift av nettsiden. Jobber tett med Emelie selv, teamet hennes og tredjepartsansvarlig for nyhetsbrevene for å sikre at resultatet treffer både visuelt, funksjonelt og økonomisk. Følger opp trafikk og adferd løpende gjennom analyseverktøyene i Vercel, og oppdaterer siden i takt med nye utgivelser og konserter.",
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/home-opera.jpg",
+              alt: "Forsiden til Emelie Hollow med CTA for konserten i Operaen søndag 30. august",
+              width: 1296,
+              height: 772,
+            },
+            {
+              type: "list",
+              label: "Innhold",
+              marker: "dash",
+              items: [
+                "Forside med én tydelig CTA som leder brukeren inn i ønsket kjøps- eller lytteflyt – nå billetter til Operaen 30. august",
+                "Konsertoversikt med kommende datoer og direktelenker til billettkjøp",
+                "Diskografi der hver utgivelse lenker rett til Spotify",
+                "Påmelding til nyhetsbrev, utformet sammen med tredjepartsansvarlig for utsendelsene",
+                "Kontaktskjema for henvendelser",
+                "Merch – klargjort i navigasjonen og lanseres senere",
+              ],
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/discography.jpg",
+              alt: "Diskografien med singelen «To Stopp Unna Karl Johan» i fokus og «Neste Stasjon» ved siden av",
+              width: 1296,
+              height: 773,
+            },
+            {
+              type: "list",
+              label: "Prosess",
+              marker: "dot",
+              items: [
+                "Oppstart med Emelie og teamet hennes – avklare mål, målgrupper og hvilke handlinger siden skal drive: lytte, kjøpe billetter og melde seg på nyhetsbrevet",
+                "Visuell retning med utgangspunkt i artistens eget foto- og grafiske materiale, slik at siden føles som en forlengelse av musikken",
+                "Informasjonsarkitektur med få, tydelige innganger – Konserter, Diskografi, Merch og Nyhetsbrev",
+                "Design og utvikling i korte runder, med jevnlige gjennomganger sammen med artisten og teamet",
+                "Samkjøring med tredjepartsansvarlig for nyhetsbrevene, slik at påmeldingen passer inn i den eksisterende utsendelsesflyten",
+                "Lansering, og løpende oppdatering av forside og CTA-er i takt med nye utgivelser og konserter",
+                "Oppfølging i Vercel Analytics – sammenligne besøk, sidevisninger, bounce rate og referrers med når innhold publiseres i sosiale medier",
+              ],
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/newsletter.jpg",
+              alt: "Påmeldingsskjema for nyhetsbrevet med felt for e-post og fornavn",
+              width: 1296,
+              height: 774,
+            },
+            {
+              type: "field",
+              label: "Løsning",
+              text: "Siden er bygget rundt artistens eget bildespråk: store, stemningsfulle fotografier, en klassisk seriff og en rolig, minimal navigasjon som lar musikken og bildene ta plassen. Forsiden skifter fokus etter hva som er viktigst akkurat nå – en ny låt, en konsert eller nyhetsbrevet – og hver seksjon har én tydelig handling, enten det er å lytte, kjøpe billett eller melde seg på.",
+            },
+            {
+              type: "field",
+              label: "Læring underveis",
+              text: "Å jobbe med en artist lærte meg hvor tett design og identitet henger sammen. Siden måtte føles like personlig som musikken, samtidig som den skulle selge billetter og bygge en lytterbase. Jeg lærte mye om å balansere estetikk med tydelige handlinger, og om verdien av å følge dataene over tid: når vi ser hvilke kanaler som faktisk driver trafikk, kan vi ta bedre valg om hvor og når vi kommuniserer. Det har også vært lærerikt å samkjøre flere parter – artist, team og tredjepart – mot et felles mål.",
+            },
+            {
+              type: "field",
+              label: "Effekt",
+              text: "Nettsiden har blitt et fast knutepunkt i Emelies kommunikasjon. I Vercel Analytics ser vi tydelig hvordan besøkende, sidevisninger, bounce rate og referrers går opp og ned i takt med utgivelser og innlegg i sosiale medier, og vi sammenligner dette med resten av informasjonsflyten ut til lytterne. Trafikken toppet seg rundt konserten i Operaen 30. august, og konsertsiden var den mest besøkte undersiden i perioden. Det gir oss kontroll på hvordan vi vil drive trafikken og kjøps- og lyttevanene videre.",
+            },
+            {
+              type: "stats",
+              items: [
+                {
+                  value: "551",
+                  label:
+                    "besøkende siste 30 dager – opp 117 % fra forrige periode",
+                },
+                { value: "1 145", label: "sidevisninger – opp 194 %" },
+                { value: "60 %", label: "bounce rate – ned 8 %" },
+                {
+                  value: "227",
+                  label:
+                    "besøkende via Google, i tillegg til trafikk fra Instagram, TikTok og Facebook",
+                },
+              ],
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/analytics.jpg",
+              alt: "Vercel Analytics for de siste 30 dagene: besøkende, sidevisninger, bounce rate, mest besøkte sider og referrers",
+              width: 1296,
+              height: 756,
+            },
+          ],
+        },
+      },
     ],
   },
 

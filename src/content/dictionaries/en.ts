@@ -784,6 +784,138 @@ export const dictionary: Dictionary = {
           ],
         },
       },
+      {
+        key: "emelie-hollow",
+        period: "2026 – Now",
+        logo: { src: "/logos/emelie-hollow.png", alt: "Emelie Hollow" },
+        color: "#111111",
+        title: "Emelie Hollow",
+        body: "The website for artist and songwriter Emelie Hollow – a digital home that promotes new songs, sells concert tickets and builds a loyal listener base through a newsletter.",
+        caseStudy: {
+          title: "Emelie Hollow",
+          meta: "2026 – Now",
+          intro: [
+            "The website for artist and songwriter Emelie Hollow – a digital home that promotes new songs, sells concert tickets and builds a loyal listener base through a newsletter.",
+          ],
+          blocks: [
+            {
+              type: "video",
+              src: "/images/emelieHollow/site-tour.mp4",
+              poster: "/images/emelieHollow/site-tour-poster.jpg",
+              alt: "Screen recording showing the Emelie Hollow website in use",
+              width: 2340,
+              height: 1288,
+            },
+            {
+              type: "sectionIntro",
+              id: "et-hjem-for-artisten",
+              title: "A home for the artist",
+            },
+            {
+              type: "field",
+              label: "Background",
+              text: "Emelie Hollow is an artist and songwriter with millions of streams on Spotify. She has taken part in the Norwegian TV series “Hver gang vi møtes”, and has recently performed at the Oslo Opera House. With a growing listener base, she needed a place of her own – outside the algorithms and feeds of social media. A place where new and existing listeners can get to know the music, find the next concert and stay up to date, and where the artist and her team stay in control of where the traffic goes next.",
+            },
+            {
+              type: "field",
+              label: "Goal",
+              text: "To give the artist a digital home that expresses her graphic and artistic side, while also working as a tool: promoting new releases like “Neste Stasjon” and “To Stopp Unna Karl Johan”, selling tickets to upcoming concerts, and building loyalty, trust and interest through the newsletter.",
+            },
+            {
+              type: "field",
+              label: "My role",
+              text: "Responsible for the design, development and running of the website. I work closely with Emelie herself, her team and the third party responsible for the newsletters to make sure the result delivers visually, functionally and financially. I follow traffic and behaviour continuously through Vercel's analytics tools, and update the site in step with new releases and concerts.",
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/home-opera.jpg",
+              alt: "The Emelie Hollow homepage with a call to action for the Opera House concert on Sunday 30 August",
+              width: 1296,
+              height: 772,
+            },
+            {
+              type: "list",
+              label: "Contents",
+              marker: "dash",
+              items: [
+                "A homepage with one clear call to action that leads visitors into the intended buying or listening flow – currently tickets for the Opera House on 30 August",
+                "A concert overview with upcoming dates and direct links to buy tickets",
+                "A discography where every release links straight to Spotify",
+                "Newsletter sign-up, designed together with the third party responsible for the mailings",
+                "A contact form for enquiries",
+                "Merch – already in the navigation, launching later",
+              ],
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/discography.jpg",
+              alt: "The discography with the single “To Stopp Unna Karl Johan” in focus and “Neste Stasjon” beside it",
+              width: 1296,
+              height: 773,
+            },
+            {
+              type: "list",
+              label: "Process",
+              marker: "dot",
+              items: [
+                "Kick-off with Emelie and her team – clarifying goals, audiences and the actions the site should drive: listening, buying tickets and signing up for the newsletter",
+                "A visual direction built on the artist's own photography and graphic material, so the site feels like an extension of the music",
+                "An information architecture with few, clear entry points – Concerts, Discography, Merch and Newsletter",
+                "Design and development in short rounds, with regular reviews together with the artist and her team",
+                "Coordination with the third party responsible for the newsletters, so the sign-up fits into the existing mailing flow",
+                "Launch, followed by ongoing updates to the homepage and calls to action in step with new releases and concerts",
+                "Follow-up in Vercel Analytics – comparing visits, page views, bounce rate and referrers with when content goes out on social media",
+              ],
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/newsletter.jpg",
+              alt: "The newsletter sign-up form with fields for email and first name",
+              width: 1296,
+              height: 774,
+            },
+            {
+              type: "field",
+              label: "Solution",
+              text: "The site is built around the artist's own visual language: large, atmospheric photographs, a classic serif and calm, minimal navigation that lets the music and the images take centre stage. The homepage shifts focus to whatever matters most right now – a new song, a concert or the newsletter – and every section has one clear action, whether that's listening, buying a ticket or signing up.",
+            },
+            {
+              type: "field",
+              label: "Learning along the way",
+              text: "Working with an artist taught me how closely design and identity are tied together. The site had to feel as personal as the music, while also selling tickets and building a listener base. I learned a lot about balancing aesthetics with clear actions, and about the value of following the data over time: when we can see which channels actually drive traffic, we can make better choices about where and when to communicate. Coordinating several parties – artist, team and third party – towards a shared goal has also taught me a lot.",
+            },
+            {
+              type: "field",
+              label: "Effect",
+              text: "The website has become a fixed hub in Emelie's communication. In Vercel Analytics we can clearly see visitors, page views, bounce rate and referrers rise and fall in step with releases and social media posts, and we compare this with the rest of the information flow out to her listeners. Traffic peaked around the Opera House concert on 30 August, and the concerts page was the most visited subpage in the period. That gives us control over how we want to drive traffic, and buying and listening habits, from here.",
+            },
+            {
+              type: "stats",
+              items: [
+                {
+                  value: "551",
+                  label:
+                    "visitors in the last 30 days – up 117% on the previous period",
+                },
+                { value: "1,145", label: "page views – up 194%" },
+                { value: "60%", label: "bounce rate – down 8%" },
+                {
+                  value: "227",
+                  label:
+                    "visitors from Google, alongside traffic from Instagram, TikTok and Facebook",
+                },
+              ],
+            },
+            {
+              type: "image",
+              src: "/images/emelieHollow/analytics.jpg",
+              alt: "Vercel Analytics for the last 30 days: visitors, page views, bounce rate, most visited pages and referrers",
+              width: 1296,
+              height: 756,
+            },
+          ],
+        },
+      },
     ],
   },
 
