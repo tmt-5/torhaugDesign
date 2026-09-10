@@ -560,13 +560,6 @@ export const dictionary: Dictionary = {
               height: 645,
             },
             {
-              type: "image",
-              src: "/images/aera/evidence-checkout-mobile.png",
-              alt: "A user paying by card in Aera's payment module on a tablet",
-              width: 1036,
-              height: 894,
-            },
-            {
               type: "sectionIntro",
               id: "ny-checkout-modul",
               eyebrow: "Example project",
@@ -581,6 +574,13 @@ export const dictionary: Dictionary = {
               type: "field",
               label: "Goal",
               text: "The goal is to improve the functionality and user experience of the HPP, making it simpler and more intuitive to use. This should help increase conversion rates for the webshops and strengthen their brand. They want the solution to be a seamless user experience in line with the best market standard.",
+            },
+            {
+              type: "image",
+              src: "/images/aera/evidence-checkout-mobile.png",
+              alt: "A user paying by card in Aera's payment module on a tablet",
+              width: 1036,
+              height: 894,
             },
             {
               type: "field",

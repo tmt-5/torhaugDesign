@@ -565,13 +565,6 @@ export const dictionary: Dictionary = {
               height: 645,
             },
             {
-              type: "image",
-              src: "/images/aera/evidence-checkout-mobile.png",
-              alt: "Bruker som betaler med kort i Aeras betalingsmodul på et nettbrett",
-              width: 1036,
-              height: 894,
-            },
-            {
               type: "sectionIntro",
               id: "ny-checkout-modul",
               eyebrow: "Eksempelprosjekt",
@@ -586,6 +579,13 @@ export const dictionary: Dictionary = {
               type: "field",
               label: "Mål",
               text: "Målet er å forbedre funksjonaliteten og brukeropplevelsen i HPP'en, slik at det blir enklere og mer intuitivt å bruke. Dette skal bidra til å øke konverteringsraten hos nettbutikkene og styrke deres merkevare. De ønsker at løsningen skal være en sømløs brukeropplevelse i tråd med beste markedsstandard.",
+            },
+            {
+              type: "image",
+              src: "/images/aera/evidence-checkout-mobile.png",
+              alt: "Bruker som betaler med kort i Aeras betalingsmodul på et nettbrett",
+              width: 1036,
+              height: 894,
             },
             {
               type: "field",
