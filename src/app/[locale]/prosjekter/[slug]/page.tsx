@@ -77,6 +77,8 @@ export default async function ProjectPage({
           period={project.period}
           title={project.title}
           logo={project.logo}
+          externalHref={project.externalHref}
+          visitSiteLabel={dictionary.projectPage.visitSite}
           description={caseStudy ? caseStudy.intro : [project.body]}
         />
 

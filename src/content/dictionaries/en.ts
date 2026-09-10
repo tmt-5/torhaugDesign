@@ -86,6 +86,7 @@ export const dictionary: Dictionary = {
         color: "#870237",
         title: "ASKO Servering",
         body: "UX lead across product teams. Involved in several initiatives spanning ASKO and NorgesGruppen Data.",
+        externalHref: "https://www.askoservering.no",
         caseStudy: {
           title: "Scanning goods on askoservering.no",
           meta: "UX designer · 2024–2025",
@@ -390,6 +391,7 @@ export const dictionary: Dictionary = {
         color: "#0A0066",
         title: "Trumf",
         body: "Involved in both the implementation of the Trumf Pay mobile payment solution and the TrumfID sign-in service.",
+        externalHref: "https://www.trumf.no",
         caseStudy: {
           title: "The Trumf app",
           meta: "UX designer · 2022",
@@ -542,6 +544,7 @@ export const dictionary: Dictionary = {
         color: "#5A1565",
         title: "Aera Payment & Identification",
         body: "An exciting project set on realising Aera's vision of becoming a leading player in web checkout solutions.",
+        externalHref: "https://www.aera.id",
         caseStudy: {
           title: "Aera Payment & Identification",
           meta: "UX designer · 2023",
@@ -657,6 +660,7 @@ export const dictionary: Dictionary = {
         title:
           "Online course on paediatric palliative care for Leve NÅ (Frambu)",
         body: "Designed an online course together with Leve NÅ, aimed at raising professional competence in paediatric palliative care for municipalities and private actors in the health sector.",
+        externalHref: "https://www.levenaa.no",
         caseStudy: {
           title:
             "Online course on paediatric palliative care for Leve NÅ (Frambu)",
@@ -791,6 +795,7 @@ export const dictionary: Dictionary = {
         color: "#111111",
         title: "Emelie Hollow",
         body: "The website for artist and songwriter Emelie Hollow – a digital home that promotes new songs, sells concert tickets and builds a loyal listener base through a newsletter.",
+        externalHref: "https://www.emeliehollow.no",
         caseStudy: {
           title: "Emelie Hollow",
           meta: "2026 – Now",
@@ -952,6 +957,7 @@ export const dictionary: Dictionary = {
     back: "Back to the front page",
     comingSoon:
       "The details for this project are on their way — the full story from start to finish is coming soon.",
+    visitSite: "Visit the site (opens in a new tab)",
   },
 
   photos: [

@@ -39,6 +39,7 @@ export type Dictionary = {
   projectPage: {
     back: string;
     comingSoon: string;
+    visitSite: string;
   };
 };
 
@@ -62,6 +63,8 @@ export type Entry = {
   body: string;
   /** Brand accent (hex, from the logo) — used for the hover tint on project rows. */
   color?: string;
+  /** Live site for the project — shown as a small external-link icon next to the case study title. */
+  externalHref?: string;
   /** Full case-study content for the project's own page — see CaseStudy. */
   caseStudy?: CaseStudy;
 };

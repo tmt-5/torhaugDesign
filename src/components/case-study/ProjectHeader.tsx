@@ -14,6 +14,10 @@ type ProjectHeaderProps = {
   period: string;
   title: string;
   logo?: Logo;
+  /** Live site for the project — rendered as a small external-link icon next to the title. */
+  externalHref?: string;
+  /** Accessible label for the external-link icon (`projectPage.visitSite`). */
+  visitSiteLabel: string;
   /** Intro paragraphs — a case study's `intro`, or the front-page card's `body`. */
   description: string[];
 };
@@ -31,6 +35,8 @@ export function ProjectHeader({
   period,
   title,
   logo,
+  externalHref,
+  visitSiteLabel,
   description,
 }: ProjectHeaderProps) {
   return (
@@ -73,8 +79,30 @@ export function ProjectHeader({
 
         <div>
           <p className="text-ink-muted">{period}</p>
-          <h1 className="text-ink text-[1.375rem] leading-8 font-normal">
+          <h1 className="text-ink flex items-center gap-2 text-[1.375rem] leading-8 font-normal">
             {title}
+            {externalHref ? (
+              <a
+                href={externalHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={visitSiteLabel}
+                className="text-ink-subtle hover:text-ink-muted inline-flex shrink-0 transition-colors duration-(--duration-fast) ease-(--ease-soft)"
+              >
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="size-4"
+                >
+                  <path d="M7 17 17 7M9 7h8v8" />
+                </svg>
+              </a>
+            ) : null}
           </h1>
         </div>
       </Reveal>
